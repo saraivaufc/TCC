@@ -1,4 +1,23 @@
-Modelo Latex para TCC da UFC (abntex2)
-======================
+Arquivo principal : TCC.tex (Informações de autor, título, orientador)
 
-Modelo Latex para Trabalhos de Conclusão de Curso da Universidade Federal do Ceará - Campus Quixadá
+Pasta para figuras: figuras/
+
+Apêndices: editaveis/apencides.tex
+Anexos: editaveis/anexos.tex
+
+Preambulo: fixos/pacoteseclass.tex
+Estilo: ufc-abntex2.sty
+
+Referências: bibtex/referencias.bib
+
+Arquivos TCC 1: 
+	- introducao.tex
+	- trabalhos_relacionados.tex
+	- objetivos.tex
+	- fundamentacao_teorica.tex
+	- metodologia.tex	
+	- resultados_preliminares.tex
+
+ISSUES: 
+	- et. al. deve estar em itálico nas citações
+
