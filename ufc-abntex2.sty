@@ -177,7 +177,7 @@ BANCA EXAMINADORA
 \renewcommand{\contentsname}{}
 
 \newcommand{\imprimirsumario}{ %
-	\pdfbookmark[0]{Sumário}{toc}
+	\pdfbookmark[0]{SUM\'ARIO}{toc}
 	\tableofcontents*
 	\cleardoublepage
 }
@@ -190,7 +190,7 @@ BANCA EXAMINADORA
 \setlength{\cftbeforesubsubsectionskip}{0pt}
 \setlength{\cftbeforechapterskip}{0pt}
 
-%\renewcommand\cftchapterfont{\normalsize}
+\renewcommand\cftchapterfont{\normalfont\bfseries}
 \renewcommand\cftsectionfont{\normalsize\normalfont\bfseries}
 \renewcommand\cftsubsectionfont{\normalsize}
 \renewcommand\cftsubsubsectionfont{\normalsize\normalfont}
@@ -228,6 +228,6 @@ BANCA EXAMINADORA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Define o titulo no sumario do Apendice para nao negrito
-\newcommand{\apendice}[1]{\section*{\normalsize\normalfont\textbf{#1}}}
+\newcommand{\apendice}[1]{\chapter*{\normalsize\normalfont\textbf{#1}}}
 
 \newcommand{\anexo}[1]{\section*{\normalsize\normalfont\textbf{#1}}}

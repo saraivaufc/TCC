@@ -7,7 +7,7 @@
 	a4paper,			% tamanho do papel.
 	sumario=abnt-6027-2012,
 	% -- opções da classe abntex2 --
-	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
 	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
 	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
 	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
@@ -43,6 +43,10 @@
 
 %My Packages
 \usepackage{threeparttable}
+\usepackage{wasysym}
+
+\renewcommand{\apendicesname}{AP\^ENDICES}
+
 
 %Deixando o Caption centralizado mesmo com quebra de linha 
 \usepackage[labelfont=bf, justification=centering]{caption}
@@ -162,9 +166,9 @@
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
 
-
 % ---
 % compila o indice
 % ---
 \makeindex
 % ---
+
