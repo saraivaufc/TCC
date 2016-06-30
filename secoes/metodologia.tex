@@ -1,17 +1,32 @@
 \section{PROCEDIMENTOS METODOLÓGICOS}
 
-Os procedimentos metodológicos definem as principais atividades realizadas para o desenvolvimento deste trabalho, incluindo as pesquisas, o desenvolvimento e avaliação do \textit{software}. Nas seções a seguir, descrevemos essas etapas.
+Os procedimentos metodológicos definem as principais etapas realizadas para o desenvolvimento deste trabalho, incluindo as pesquisas, o desenvolvimento e avaliação do \textit{software}. Nas seções a 
+seguir, descrevemos essas etapas.
 
 \subsection{Definição do Processo}
-Processos de \textit{software} são utilizados pelos engenheiros de \textit{software} para controlar e coordenar projetos de desenvolvimento de \textit{softwares} reais \cite{talma2006desenvolvimento}. \citeonline{padua2003engenharia} descreve um processo como um conjunto de passos parcialmente  ordenados, constituídos por atividades, métodos, práticas e transformações, usado para atingir uma meta. Desta forma, um modelo de processo de \textit{software} é uma descrição simplificada de um processo, sendo também uma representação abstrata do mesmo para explicar as diferentes abordagens de desenvolvimento \cite{sommerville2003engenharia}.
 
-Processos de software são complexos e dependem do julgamento humano como em qualquer processo intelectual, sendo assim, não existe um processo de software ideal, todos são desenvolvidos de maneiras diferentes por cada organização \cite{sommerville2003engenharia}.
+Processos de \textit{software} são utilizados pelos engenheiros de \textit{software} para controlar e coordenar projetos de desenvolvimento de \textit{softwares} reais \cite{talma2006desenvolvimento}. 
+\citeonline{padua2003engenharia} descreve um processo como um conjunto de passos parcialmente  ordenados, constituídos por atividades, métodos, práticas e transformações, usados para atingir uma meta. 
+Desta forma, um modelo de processo de \textit{software} é uma descrição simplificada de um processo, sendo também uma representação abstrata do mesmo para explicar as diferentes abordagens de 
+desenvolvimento \cite{sommerville2003engenharia}.
 
-O processo de \textit{software} utilizado para desenvolver o sistema foi baseado no modelo cascata, também chamado de ciclo de vida clássico, proposto por Royce em 1970. Neste modelo, as fases são sistematicamente seguidas de maneira sequencial \cite{pressman2006engenharia}. O modelo inicia com a fase de especificação de requisitos, passando pelo planejamento, modelagem, construção e implantação, finalizando na manutenção progressiva do software, como apresentamos na \autoref{figura_ciclo_cascata}.
+Processos de software são complexos e dependem do julgamento humano como em qualquer processo intelectual. Sendo assim, não existe um processo de software ideal, todos são desenvolvidos de maneiras 
+diferentes por cada organização \cite{sommerville2003engenharia}.
 
-As vantagens desse modelo se devem ao fato de que só se avança para a tarefa seguinte quando o cliente valida e aceita os produtos finais da tarefa atual, facilitando assim a compreensão adquirida ao longo do projeto, além de facilitar o processo de criação da documentação para o sistema \cite{pressman2006engenharia}. Já as principais desvantagens segundo \citeonline{pressman2006engenharia}, se devem ao fato de que os projetos reais raramente seguem o fluxo sequencial ao qual o modelo propõe; o mesmo afirma ainda que este modelo exige que todos os requisitos sejam estabelecidos na fase inicial, fato que geralmente é difícil tanto para o cliente quanto para o desenvolvedor, já que os requisitos mudam constantemente. Outro grande problema com esse modelo é que o cliente só recebe uma versão executável do sistema no final de todo o processo de desenvolvimento, o que não agrada a muitos clientes.
+O processo de \textit{software} utilizado para desenvolver o sistema foi baseado no modelo cascata, também chamado de ciclo de vida clássico, proposto por Royce em 1970. Neste modelo, as fases são 
+sistematicamente seguidas de maneira sequencial \cite{pressman2006engenharia}. O modelo inicia com a fase de especificação de requisitos, passando pelo planejamento, modelagem, construção e 
+implantação, finalizando na manutenção progressiva do software, como apresentamos no \nameref{figura_ciclo_cascata}.
 
-Levando em consideração as vantagens e desvantagens antes citadas, esse modelo foi escolhido como base para o processo por facilitar o desenvolvimento de uma documentação mais detalhada e principalmente pela equipe de desenvolvimento ser formada por uma única pessoa, o autor deste trabalho, impossibilitando assim, uma divisão de tarefas durante o desenvolvimento, característico de metodologias ágeis \footnote{Metodologias de desenvolvimento de software que tem enfoco nas pessoas e não em processos ou algoritmos, além de uma preocupação menor em documentação e maior em implementação \cite{michel2004metodologias}.}.
+As vantagens desse modelo se devem ao fato de que só se avança para a tarefa seguinte quando o cliente valida e aceita os produtos finais da tarefa atual, facilitando assim a compreensão adquirida ao 
+longo do projeto, além de facilitar o processo de criação da documentação para o sistema \cite{pressman2006engenharia}. Já as principais desvantagens, segundo \citeonline{pressman2006engenharia}, se 
+devem ao fato de que os projetos reais raramente seguem o fluxo sequencial ao qual o modelo propõe. Este modelo exige ainda que todos os requisitos sejam estabelecidos na fase 
+inicial, fato que geralmente é difícil tanto para o cliente quanto para o desenvolvedor, pois os requisitos geralmente est\~ao em constante mudan\c{c}a. Outro grande problema com esse modelo é que o 
+cliente só recebe uma versão executável do sistema no final de todo o processo de desenvolvimento, o que não agrada a muitos clientes.
+
+Levando em consideração as vantagens e desvantagens antes citadas, esse modelo foi escolhido como base para o processo por facilitar o desenvolvimento de uma documentação mais detalhada e 
+principalmente pela equipe de desenvolvimento ser formada por uma única pessoa, o autor deste trabalho, impossibilitando a divisão de tarefas característica de metodologias 
+ágeis \footnote{Metodologias de desenvolvimento de software que tem enfoque nas pessoas e não em processos ou algoritmos, além de uma preocupação menor em documentação e maior em implementação 
+\cite{michel2004metodologias}.}.
 
 \begin{figure}[H]
 \centering
@@ -21,34 +36,98 @@ Levando em consideração as vantagens e desvantagens antes citadas, esse modelo
 \fnote{Fonte: \citeonline{pressman2006engenharia}}
 \end{figure}
 
-O processo desenvolvido pode ser encontrado no \autoref{apendice_processo}.
+Dividimos o processo em nove atividades. A seguir, descreveremos brevemente cada uma delas:
+\begin{enumerate}
+	\item Iniciar Projeto: nessa atividade identificamos os objetivos do projeto, suas restri\c{c}\~oes, envolvidos, a organiza\c{c}\~ao da equipe de desenvolvimento e por \'ultimo realizamos uma 
+reuni\~ao de in\'icio do projeto.
+	\item Requisitos: nessa atividade realizamos o levantamento e an\'alise dos requisitos, sua documenta\c{c}\~ao, verifica\c{c}\~ao e valida\c{c}\~ao, al\'em de um estudo para saber atrav\'es dos 
+requisitos se o projeto \'e vi\'avel. 
+	\item Projeto: nessa atividade desenvolvemos o projeto da arquitetura do sistema, o planejamento dos m\'odulos, o projeto da interface gr\'afica com o usu\'ario  e como ser\~ao persistidos as 
+entidades do sistema.
+	\item Implementação: nessa atividade escolhemos primeiramente um m\'odulo do sistema para implementar, em seguida planejamos como ocorrer\'a a implementa\c{c}\~ao desse 
+m\'odulo, implementamos o m\'odulo, e por \'ultimo realizamos a integra\c{c}\~ao de m\'odulo ao resto do sistema. Esse ciclo \'e repetido at\'e que todos os m\'odulos estejam desenvolvidos.
+	\item Testes: durante essa atividade realizaremos o planejamento dos testes para o sistema, em seguida executaremos os testes para cada m\'odulo do sistema e para o sistema como um todo, e 
+por \'ultimo iremos gerar um relat\'orio com os resultados dos testes.
+	\item Implantação: ap\'os o sistema desenvolvido e devidamente testado, ele segue para a implanta\c{c}\~ao, em que prepararemos o ambiente onde o sistema ser\'a executado e realizaremos a 
+implanta\c{c}\~ao. Ap\'os a implanta\c{c}\~ao, realizaremos testes de aceita\c{c}\~ao e a cria\c{c}\~ao de um manual para o sistema.
+	\item Gerenciamento do Projeto: essa atividade ocorre durante todo o desenvolvimento do sistema e tem por objetivo permitir que o projeto consiga ser conclu\'ido dentro do prazo e da qualidade 
+desejada.
+	\item Avalia\c{c}\~ao do Processo: essa atividade \'e executada durante todo o desenvolvimento do projeto e permite que o processo utilizado seja constantemente avaliado e adaptado conforme segue 
+o desenvolvimento do projeto.
+	\item Encerrar Projeto: nessa \'ultima atividade ser\'a realizado apenas uma reuni\~ao em que ser\'a oficializado o final do projeto.
+\end{enumerate}
+
+O processo desenvolvido est\'a dispon\'ivel em \url{www.askmath.quixada.ufc.br/static/process/}. 
 
 \subsection{Levantamento e Análise de Requisitos}
 
 
-O Levantamento de Requisitos é a fase do desenvolvimento de um software onde o analista verifica junto ao usuário, quais as necessidades, condições e princípios que o \textit{software} deverá atender \cite{matuda2013mapas}. Essa fase possibilitou conhecer e estudar as necessidades do cliente, assim como as restrições que o software estará sujeito.
+O Levantamento e An\'alise de Requisitos é a fase do desenvolvimento de um software em que o analista verifica junto ao usuário, quais as necessidades, condições e princípios que o \textit{software} 
+deverá atender \cite{matuda2013mapas}. Essa fase possibilitou conhecer e estudar as necessidades do cliente, assim como as restrições que o software estará sujeito.
 
-Para realizar a coleta dos requisitos, optamos por utilizar entrevistas com o cliente. Nessas entrevistas, que se caracterizarão como semi-estruturadas, já que foram guiadas por um roteiro previamente elaborado, composto por questões abertas \cite{belei2008uso}, foi possível obter os requisitos do sistema, assim como o público-alvo a quem o sistema atenderá. Essa técnica foi utilizada porque permitia uma organização flexível e ampliação dos questionamentos à medida que as informações foram sendo fornecidas pelo cliente \cite{fujisawa2000utilizaccao}.
+Para realizar a coleta dos requisitos, optamos por utilizar entrevistas com o cliente. Nessas entrevistas, que se caracterizarão como semi-estruturadas, já que foram guiadas por um roteiro previamente 
+elaborado, composto por questões abertas \cite{belei2008uso}, foi possível obter os requisitos do sistema, assim como o público-alvo a quem o sistema atenderá. Essa técnica foi utilizada porque 
+permitia uma organização flexível e ampliação dos questionamentos à medida que as informações foram sendo fornecidas pelo cliente \cite{fujisawa2000utilizaccao}.
+
+O ambiente atender\'a quatro tipos de usu\'arios que formaram seu p\'ublico-alvo, ser\~ao administradores, professores, assistentes, e estudantes. Os administradores ser\~ao respons\'aveis por 
+cadastrar 
+novos professores, assim como realizar a manuten\c{c}\~ao di\'aria do sistema. Os professores ser\~ao responsáveis por definir as disciplinas e li\c{c}\~oes que faram parte do sistema. 
+Ap\'os as disciplinas e li\c{c}\~oes definidas pelos professores, os assistentes ser\~ao respons\'aveis por manter os problemas de cada li\c{c}\~ao. Os estudantes resolver\~ao os problemas 
+desenvolvidos pelos assistentes e poder\~ao postar d\'uvidas sobre qualquer conte\'udo no f\'orum de discuss\~oes. Quando o ambiente for aplicado em sala de aula, os professores ser\~ao ainda 
+respons\'aveis por gerenciar suas turmas e acompanhar o andamento do progresso de cada um de seus estudantes, j\'a os assistentes ser\~ao responsáveis por tirar d\'uvidas dos estudantes no f\'orum 
+de discuss\~oes.
 
 Para uma melhor compreensão do público-alvo, foram criadas Personas 
-\cite{pruitt2003personas}, personagens fictícios usados para caracterizar os papéis dos diferentes usuários do sistema \cite{guerra2010colaboraccao}, cada persona criada possuía um nome, hábitos, histórias pessoais, motivações, objetivos, entre outras (ver \autoref{apendice_personas}). A escolha dessa técnica deu-se pelo fato de que ela permitia ao desenvolvedor saber mais precisamente para quem ele deveria construir o sistema, além de permitir uma distinção maior do público-alvo e dessa forma, aprofundar-se nos interesses individuais de cada um.
+\cite{pruitt2003personas}, personagens fictícios usados para caracterizar os papéis dos diferentes usuários do sistema \cite{guerra2010colaboraccao}. Cada persona criada possui um nome, hábitos, 
+histórias pessoais, motivações, objetivos, entre outras (ver \nameref{apendice_personas}). A escolha dessa técnica deu-se pelo fato de que ela permitia ao desenvolvedor saber mais precisamente para 
+quem ele deveria construir o sistema, além de permitir uma distinção maior do público-alvo e, dessa forma, aprofundar-se nos interesses individuais de cada um.
 
-Após o levantamento dos requisitos, foi realizado uma análise dos mesmos. Nessa análise, os requisitos foram agrupados em categorias. As categorias utilizadas são descritas por \citeonline{sommerville2003engenharia} como:
+Apresentaremos a seguir, os principais requisitos levantados durante essa etapa:
+
 \begin{alineascomponto}
-    \item Requisitos Funcionais: especificam ações que um sistema deve ser
+	\item Hierarquia dos Conteúdos: no sistema, dever\~ao existir disciplinas, cada disciplina dever\'a possuir li\c{c}\~oes e cada li\c{c}\~ao ser\'a formada por problemas. Os professores poder\~ao 
+cadastrar v\'arias disciplinas e li\c{c}\~oes, j\'a os assistentes ficar\~ao responsáveis por adicionar os problemas nas li\c{c}\~oes. Quando o estudante entrar no sistema, ele poder\'a ver somente 
+as li\c{c}\~oes de uma disciplina por vez, podendo alternar entre disciplinas. Para um estudante come\c{c}ar a responder os problemas, ele dever\'a escolher inicialmente a disciplina e em seguida a 
+li\c{c}\~ao. 
+
+	\item Estrutura do Problema: cada problema possuir\'a uma descri\c{c}\~ao e v\'arios itens. Os problemas ser\~ao somente de m\'ultipla escolha e poder\~ao possuir no m\'inimo dois e no m\'aximo 
+cinco itens, essa quantidade ficar\'a a crit\'erio do assistente que realizar\'a a adi\c{c}\~ao do problema no sistema.
+
+	\item Saltar Problemas: o sistema deverá permitir ao aluno saltar problemas e rever os saltos 
+realizados com algumas restrições na quantidade de saltos..
+	
+	\item Pedir Ajuda: para todo problema, o estudante poderá possuir uma ajuda. No momento em que o assistente estiver adicionando o problema, ele poderá ou não adicionar um texto de ajuda para o 
+estudante, isso fica a critério dele. Quando o estudante estiver resolvendo os problemas, ele terá um botão que quando acionado, mostrar\'a o texto de ajuda. O sistema dever\'a salvar a quantidade 
+de vezes que o estudante pedir ajuda e em quais problemas.
+	
+	\item Defici\^encias: \'e possível, a partir de um item respondido incorretamente em um problema, identificar a deficiência do estudante, por isso é fundamental que no momento que o 
+assistente estiver adicionando os itens do problema, ele possa escolher para cada item incorreto, uma ou várias li\c{c}\~oes, essas lições ficarão sendo as supostas deficiências do aluno caso ele 
+responda incorretamente aquele problema marcando aquele determinado item.
+	
+	\item F\'orum: o sistema deverá possuir um fórum onde os estudantes possam postar suas dúvidas para que professores, assistentes e outro participantes possam lhes ajudar com o problema. Esse fórum, deve possuir tópicos, comentários para os tópicos, e os comentários devem oferecer a opção de se comentar com imagens. 
+
+\end{alineascomponto}
+
+Após o levantamento dos requisitos, foi realizada a análise dos mesmos. Nessa análise, os requisitos foram agrupados em categorias. As categorias utilizadas são descritas por 
+\citeonline{sommerville2003engenharia} como:
+\begin{alineascomponto}
+    \item Requisitos Funcionais -- especificam ações que um sistema deve ser
 capaz de executar, sem levar em consideração restrições físicas. Os requisitos
 funcionais especificam, portanto, o comportamento de entrada e saída de um
 sistema.
-    \item Requisitos Não Funcionais: descrevem apenas atributos do sistema ou
+    \item Requisitos Não Funcionais -- descrevem apenas atributos do sistema ou
 atributos do ambiente do sistema, como segurança, desempenho, usabilidade e
 confiabilidade.
-    \item Requisitos de Domínio: são os requisitos do domínio da aplicação do sistema e que refletem características desse domínio.
+    \item Requisitos de Domínio -- são os requisitos do domínio da aplicação do sistema e que refletem características desse domínio.
 \end{alineascomponto}
 
-Após esse agrupamento, os requisitos funcionais foram representados em Casos de Uso \cite{jacobson92engenharia}, um caso de uso identifica os agentes envolvidos em uma interação e especifica o tipo de interação, utilizando anotações sugeridas pela Unified Modeling Language (UML) 
-\citeonline{sommerville2003engenharia}. Em seguida, foi realizada a documentação dos requisitos (ver \autoref{apendice_requisitos}).
+Após esse agrupamento, os requisitos funcionais foram representados em Casos de Uso \cite{jacobson92engenharia}. Um caso de uso identifica os agentes envolvidos em uma interação e especifica o tipo 
+de interação utilizando anotações sugeridas pela Unified Modeling Language (UML) 
+\citeonline{sommerville2003engenharia}. Em seguida, foi realizada a documentação dos requisitos (ver \nameref{apendice_requisitos}).
 
-Na etapa final dessa fase, ocorreu a Validação dos Requisitos junto ao cliente.  A Validação dos Requisitos é definida como o processo que certifica que o modelo de requisitos gerado  esteja  consistente  com  as  necessidades  e  intenções  de  clientes  e usuários \cite{rilston2003metodologia}. Esta etapa permitiu que os requisitos coletados e documentados estejam de acordo com o que o cliente solicitou.
+No final dessa etapa, ocorreu a Validação dos Requisitos junto ao cliente.  A Validação dos Requisitos é definida como o processo que certifica que o modelo de requisitos gerado  esteja  consistente  
+com  as  necessidades  e  intenções  de  clientes  e usuários \cite{rilston2003metodologia}. Esta etapa permitiu que os requisitos coletados e documentados estivesse de acordo com o que o 
+cliente solicitou.
 
 \subsection{Projeto do Sistema}
 
@@ -59,90 +138,94 @@ Nesta fase, definimos como será aplicado o conhecimento obtido na pesquisa bibl
 \subsubsection{Arquitetura}
 Por arquitetura de software, entende-se a estrutura ou a organização de componentes de módulos, a maneira através da qual esses componentes interagem e a estrutura de dados que será usada pelos componentes \cite{pressman2006engenharia}.
 
-A arquitetura utilizada baseia-se na arquitetura Cliente-Servidor\cite{david2013everything}, onde o processamento é dividido em processos distintos. Um processo é responsável pela manutenção da informação (servidor) e os outros são responsáveis pela captação de dados (clientes). Nessa arquitetura, os clientes enviam pedidos para o servidor, e este por sua vez processa estes dados e envia as respostas dos pedidos aos clientes.
+A arquitetura utilizada baseia-se na arquitetura Cliente-Servidor\cite{david2013everything}, em que o processamento é dividido em processos distintos. Um processo é responsável pela manutenção da 
+informação (servidor) e os outros são responsáveis pela captação de dados (clientes). Nessa arquitetura, os clientes enviam pedidos para o servidor, e este por sua vez processa estes dados e envia as 
+respostas dos pedidos aos clientes.
 
 Este modelo de arquitetura facilitará na manutenção do sistema, tendo em vista que toda atualização só necessitará ser realizada no servidor e automaticamente a mesma se propagará para todos os clientes. Com todos os recursos centralizados no servidor, podemos também ter um maior ganho com segurança, já que podemos centralizar os nossos esforços para manter a segurança das informações em apenas um único ponto, além de possibilitar que apenas cliente credenciados possam acessar e/ou alterar essas informações. Uma das outras grandes vantagens que temos  ao utilizar esse modelo, é que a medida que a quantidade de clientes aumente, será possível suprir esses clientes sem necessitar realizar nenhuma modificação essencial.
 
-Para uma visualização mais detalhada da arquitetura de software definida, visitar o  \autoref{apendice_arquitetura}.
+Para uma visualização mais detalhada da arquitetura de software definida, visitar o  \nameref{apendice_arquitetura}.
 
 \subsubsection{Ferramentas}
 
  A análise do sistema foi feita com o auxílio da ferramenta de criação de diagramas Astah \cite{astah2016}, a implementação com a linguagem Python \cite{vanrossum2010python}, com o sistema de gerenciamento de banco de dados PostgresSQl \cite{momjian2001postgresql} e a camada de aplicação através da utilização do framework Django \cite{django2016}. Assim como a utilização do módulo Rosseta \cite{rosetta2016} para permitir a internacionalização do sistema.
  
-A seguir a lista das ferramentas e das tecnologias utilizadas para o desenvolvimento do projeto:
+A seguir, apresentaremos a lista das ferramentas e das tecnologias utilizadas para o desenvolvimento do projeto:
 
 \begin{alineas}
-	\item Astah: Para a modelagem baseada em UML (Unified Modeling Language) do sistema.
-	\item Python: Linguagem de programação para implementação do sistema.
-    \item Django: Framework web responsável pela camada de aplicação.
-    \item Rosetta: Aplicação desenvolvida em Django que facilitará a tradução do projeto para diversas línguas.  
-    \item PostgreSQL: Como banco de dados para armazenamento e consulta de informações.
-    \item Metro UI Css: Framework que faz uso de HTML, Cascading Stype Sheet (CSS) e Javascript para criação do front-end do sistema.
-    \item MathJax: É uma engine\footnote{Uma biblioteca ou pacote de funcionalidades que são utilizadas para facilitar o desenvolvimento de alguma tecnologia.} de código aberto desenvolvido em javascript na forma de um plugin para incluir equações matemáticas em todos os navegadores, esse plugin aceita expressões em  MathML e Latex.
+	\item Astah: para a modelagem baseada em UML (Unified Modeling Language) do sistema.
+	\item Python: linguagem de programação para implementação do sistema.
+    \item Django: framework web responsável pela camada de aplicação.
+    \item Rosetta: aplicação desenvolvida em Django que facilitará a tradução do projeto para diversas línguas.  
+    \item PostgreSQL: como banco de dados para armazenamento e consulta de informações.
+    \item Metro UI CSS: framework que faz uso de HTML, Cascading Stype Sheet (CSS) e Javascript para criação do front-end do sistema.
+    \item MathJax: \'e uma engine\footnote{Uma biblioteca ou pacote de funcionalidades que são utilizadas para facilitar o desenvolvimento de alguma tecnologia.} de código aberto desenvolvido em 
+javascript na forma de um plugin para incluir equações matemáticas em todos os navegadores, esse plugin aceita expressões em  MathML e Latex.
 
 \end{alineas}
 
 Essas ferramentas foram selecionadas por se tratarem, algumas, de ferramentas Open Source, ou seja, que seu código-fonte fonte pode ser alterado para diferentes fins, possibilitando assim que qualquer um consulte, examine ou as modifique, e outras por serem ferramentas que possibilitam um rápido desenvolvimento.
 
-No final dessa fase, foi gerado o Plano de Projeto, esse documento guiar\'a os desenvolvedores durante 
+No final dessa etapa, foi gerado o Plano de Projeto, esse documento guiar\'a o desenvolvedor durante 
 todo o processo de desenvolvimento.
 
 \subsection{Implementação do Sistema}
 
-A implementação envolve as atividades de codificação, compilação e integração. A codificação visa traduzir o design num programa, utilizando linguagens e  ferramentas adequadas. A codificação deve refletir a estrutura e o comportamento descrito no projeto. Os componentes arquiteturais devem ser codificados de forma independente e depois integrados \cite{aguiar2012requisitos}.
+A implementação envolve as atividades de codificação, compilação e integração. A codificação visa traduzir o design num programa, utilizando linguagens e  ferramentas adequadas. A codificação deve 
+refletir a estrutura e o comportamento descrito no projeto. Os componentes arquiteturais devem ser codificados de forma independente e depois integrados \cite{aguiar2012requisitos}.
 
 \subsection{Verificação e Validação}
-Essa fase destina-se a mostrar que o sistema está de acordo com a especificação 
-e que ele atende às expectativas de clientes e usuários. Al\'em de assegurar 
-que o  programa está fazendo aquilo que foi definido na sua especificação e não 
+Essa etapa destina-se a mostrar que o sistema está de acordo com a especificação 
+e que ele atende às expectativas de clientes e usuários,  al\'em de assegurar 
+que o  programa está fazendo aquilo que foi definido na sua especificação e que não 
 possui  erros  de  execução \cite{aguiar2012requisitos}. 
 
 Durante essa fase, ser\~ao realizados Testes de Unidade e Integra\c{c}\~ao em 
-cada modulo do sistema, assim como Testes de Sistema no sistema como um todo.
+cada modulo do sistema, assim como Testes de Sistema no sistema j\'a integrado.
 
 \citeonline{aniche2014teste} define essas categorias de Testes de Software como:
 
 \begin{alineascomponto}
-	\item Teste de Unidade é aquele que testa uma única unidade do sistema. 
+	\item Teste de Unidade -- é aquele que testa uma única unidade do sistema. 
 Ele a testa de maneira isolada, geralmente simulando as prováveis dependências 
 que aquela unidade tem. Em sistemas orientados a objetos, é comum que a unidade 
 seja uma classe. Ou seja, quando queremos escrever testes de unidade para a 
 classe Pedido, essa bateria de testes testará o funcionamento da classe Pedido, 
 isolada, sem interações com outras classes.
 
-	\item  Teste de Integração é aquele que testa a integração entre duas 
+	\item  Teste de Integração -- é aquele que testa a integração entre duas 
 partes do seu sistema. Os testes que você escreve para a sua classe PedidoDao, 
-por exemplo, onde seu teste vai até o banco de dados, é um teste de integração. 
+por exemplo, em que seu teste vai até o banco de dados, é um teste de integração. 
 Afinal, você está testando a integração do seu sistema com o sistema externo, 
 que é o banco de dados. Testes que garantem que suas classes comunicam-se bem 
 com serviços web, escrevem arquivos texto, ou mesmo mandam mensagens via socket 
 são considerados testes de integração.
 
-	\item Teste de Sistema garante que o sistema funciona como um todo. Este 
+	\item Teste de Sistema -- \'e aquele que garante que o sistema funciona como um todo. Este 
 nível de teste está interessado se o sistema funciona como um todo, com todas as 
 unidades trabalhando juntas. Ele é comumente chamado de teste de caixa preta, já 
-que o sistema é testado “com tudo ligado”: banco de dados, serviços web, batch 
-jobs, e etc. 
+que durante o teste n\~ao se importa com a forma que os dados s\~ao processados, mas sim se as sa\'idas est\~ao de acordo com o que era esperado para entradas. 
 \end{alineascomponto}
 
 \subsection{Definição dos Conteúdo para o Sistema}
 
-Após o sistema está verificado e validado, ele terá que possui conteúdos para ser utilizado pelo usuário final durante a fase de aplicação. 
+Após o sistema estar verificado e validado, ele terá que possuir conteúdos para ser utilizado pelo usuário final durante a fase de aplicação. A aplicação da primeira versão do sistema está planejada 
+para ocorrer com uma turma de matemática da Universidade Federal do Ceará - Campus Quixadá. Decidimos optar por deixar os monitores\footnote{É o aluno de graduação concursado para exercer, juntamente 
+com o professor, atividades técnico-didáticas condizentes com o seu grau de conhecimento junto à determinada disciplina, já por ele cursada.} da disciplina desenvolverem os conteúdos que ser\~ao 
+utilizados no sistema durante essa fase. 
 
-Sendo que a aplicação da primeira versão do sistema está planejada para ocorrer com uma turma de matemática da Universidade Federal do Ceará - Campus Quixadá, decidimos optar por deixar os monitores\footnote{É o aluno de graduação concursado para exercer, juntamente com o professor, atividades técnico-didáticas condizentes com o seu grau de conhecimento junto à determinada disciplina, já por ele cursada.} da disciplina desenvolver o conteúdo que será utilizado no sistema durante essa fase. 
-
-Os monitores passaram por um treinamento, onde aprenderam a utilizar o sistema para assim, adicionar os conteúdos desenvolvidos.
+Os monitores passar\~ao por um treinamento, ao qual aprender\~ao a utilizar o sistema para, assim, adicionar os conteúdos desenvolvidos.
 
 \subsection{Aplicação da Solução na Universidade Federal do Ceará - Campus Quixadá}
 
-Aplicaremos o ambiente desenvolvido numa turma de Matemática Básica da UFC - Campus Quixadá. Nesta turma, que será formada por cerca de cinquenta alunos, dividiremos esses alunos em dois grupos, Grupo A e Grupo B. O Grupo A, será formado pela metade dos alunos da turma, escolhidos aleatoriamente, e o Grupo B pelos alunos restantes. Esta divisão, deve-se ao fato de que ao final da experiência de utilização do ambiente pelos alunos, necessitarmos realizar uma comparação entre alunos que utilizaram o sistema e que não utilizaram e no período que pretendemos realizar essa experiencia só existirá uma turma disponível. Dessa forma, o sistema será utilizado pelos alunos do Grupo A, enquanto que os do Grupo B continuaram estudando da mesma forma. 
+Aplicaremos o ambiente desenvolvido em duas turmas de Matemática Básica da UFC - Campus Quixadá. Nessas turmas, que est\'a previsto que sejam formadas por aproximadamente trinta estudantes 
+cada, dividiremos os estudantes de cada turma em dois grupos, Grupo A1 e Grupo B1 para a primeira turma e Grupo A2 e B2 para a segunda turma. Os Grupos A1 e A2, ser\~ao formados pela metade 
+dos estudantes de cada turma, escolhidos aleatoriamente, e os Grupos B1 e B2 pelos estudantes restantes. 
+Esta divisão, deve-se ao fato de que ao final da experiência de utilização do ambiente pelos estudantes, realizaremos uma comparação no desempenho entre estudantes que utilizaram o sistema com os que 
+não utilizaram. Dessa forma, o sistema será utilizado pelos estudantes dos Grupos A1 e A2, enquanto que os Grupos B1 e B2 (grupos de controle) continuaram estudando da mesma forma. 
 
-O objetivo dessa experiência, é permitir compreendermos de que modo a utilização do AVA pode contribuir para a aprendizagem dos alunos na Matemática e analisar de que forma novas metodologias de ensino-aprendizagem associadas ao uso desse ambiente contribuirão para a aprendizagem da matemática.
-
-Os dados que iremos utilizar para atingirmos os objetivos dessa experiência, serão inicialmente proveniente de duas fontes. A primeira forte será os dados gerados no próprio ambiente durante a utilização pelos alunos, como informações sobre desempenho, obstáculos enfrentados, entre outros. Já para o segundo, serão obtidos de dois questionários aplicados aos alunos do Grupo A, Questionário Inicial e Questionário Final. 
-
-O Questionário Inicial será aplicado antes da utilização do sistema pelos alunos e tem por objetivo caracterizar os indivíduos que fazem parte da experiência, além de analisar as opiniões desses indivíduos acerca de sua relação com a matemática, computador e ferramentas educacionais, já o questionário Final que será aplicado apenas após o final da experiência, servirá para obter informações e opiniões acerca da nova metodologia de ensino.
-
+O objetivo dessa experiência e analisar o impacto que o uso do ambiente desenvolvido tem na aprendizagem dos estudantes. Os dados que iremos utilizar para atingirmos os objetivos com essa 
+experiência ser\~ao providos de duas avalia\c{c}\~oes realizadas por todos os alunos das duas turmas antes e depois a utiliza\c{c}\~ao do ambiente pelos Grupos A1 e A2.
 
 \subsection{Cronograma de Execução}
 \input{secoes/cronograma}

@@ -1,162 +1,179 @@
 \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
-\chapter*{APÊNDICE C - DOCUMENTO DE PERSONAS}\label{apendice_personas}
-\addcontentsline{toc}{chapter}{APÊNDICE C - DOCUMENTO DE PERSONAS}
+\chapter*{APÊNDICE C - DOCUMENTO DE ARQUITETURA}\label{apendice_arquitetura}
+\addcontentsline{toc}{chapter}{APÊNDICE C - DOCUMENTO DE ARQUITETURA}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
 
-\section{Charlie - Técnico em Informática}
 
+\section{Introdução}
+Neste documento será detalhado a arquitetura do sistema proposto para o projeto 
+AskMath. Como o projeto é voltado para a web, o sistema é formado por diversos 
+padrões de projetos de mercado, principalmente, padrões orientados a objetos. 
+Vamos destacar cada parte da arquitetura escolhida para a fácil compreensão de 
+outras equipes que venham a trabalhar no projeto, seguindo a risca seu modelo 
+para permitir que o sistema seja facilmente modificado ou incrementado sem que a 
+estrutura do software seja perdida.
+
+\section{Objetivos}
+\begin{alineascomponto}
+	\item Prover uma visão geral da arquitetura do projeto, detalhando cada 
+parte da estrutura do sistema para permitir a compreensão do mesmo.
+    \item Permitir que este documento seja utilizado por outras equipes de 
+desenvolvimento que estão dando continuidade ao projeto, quanto a novos 
+integrantes inseridos na equipe.
+    \item Permitir que este documento sirva como meio de comunicação entre o 
+Arquiteto de Sistema e a equipe desenvolvedores.
+    \item Apresentar aos \textit{stakeholders} uma visão de alto nível de como o 
+sistema é implementado e como esta estruturado.
+    \item Aumentar o desempenho e a robustez, bem como a capacidade de 
+distribuição e manutenibilidade do sistema.
+\end{alineascomponto}
+
+\section{Considerações Gerais}
+As definições de arquitetura do processo de desenvolvimento do software esta 
+preocupado como o sistema deve ser organizado e com a estrutura geral do 
+sistema, estas definições tem que atender as especificações do projeto, desde as 
+especificações de segurança, regras de negócio, até a parte de persistência de 
+banco de dados. As decisões de projeto de arquitetura têm efeitos profundos 
+sobre a possibilidade de o sistema atender ou não aos requisitos críticos, como 
+desempenho, confiabilidade e manutenibilidade.
+
+As definições da arquitetura atendem as especificações de projeto documentadas 
+até o presente momento, apresentando um modelo completo do sistema que mostre 
+seus diferentes componentes, suas interfaces e conexões.
+
+\section{Responsabilidades}
+Toda a equipe de desenvolvimento é responsável por elaborar este documento  e 
+por manter a integridade do mesmo durante o processo de desenvolvimento. Cada 
+membro deve:
+\begin{alineascomponto}
+	\item Analisar todas as mudanças arquiteturais significativas e 
+documentá-las;
+    \item Ao verificar uma possível alteração na arquitetura, convocar uma 
+reunião com toda e equipe para discutir a possível alteração. 
+\end{alineascomponto}
+
+\section{Arquitetura}
+A arquitetura foi desenvolvida para ser de baixo acoplamento e que ao mesmo 
+tempo fosse independente de tecnologias existentes do mercado, sendo assim, 
+poderíamos por exemplo futuramente trocar o framework Django pelo o Spring, e o 
+mesmo seria transparente para os programadores e para o sistema .
+
+\subsection{Elementos que compõe a Arquitetura}
+A arquitetura é composta por elementos, em que em conjunto produzem o produto 
+final. Esses elementos são: Database, Models, Views e Templates.
+
+Nos tópicos a seguir descrevemos cada um dos componentes e o seu papel  dentro 
+da arquitetura como um todo, além de discutirmos a tecnologia e os padrões 
+adotados para a implementação dos mesmos.
+
+\subsubsection{Database}
+No desenvolvimento de sistemas, necessitamos muitas vezes salvar as informações 
+geradas para eventuais utilizações das mesmas, para isso, temos disponíveis os 
+banco de dados. Em geral, as linguagens de programação nos proprocionam formas 
+de acessar esses dados, porém de forma muito  complexa que acaba ocasionando um 
+alto acoplamento para termos de alta coesão. O framework que utilizaremos, nós 
+propociona uma camada apenas de banco de dados ou camada de persistência.
+
+Nessa camada estão as entidades do sistema, e as mesmas implementam 
+funcionalidades de conexão e outros controles que são iguais a todos os tipos de 
+acessos a bancos de dados. 
+
+Com esse tipo de acesso aos dados, conseguimos trocar facilmente de banco de 
+dados sem afetar a implementação do sistema. Por exemplo, caso estejamos 
+utilizando um sgbd relacional como o postgresql para armazenar os dados e 
+necessitarmos migrar para um sgbd não “relacional”, os famosos banco de dados 
+NoSQL, como o MongoDB, não será necessário alterar nenhum aspecto da 
+implementação,  pois as regras de negócio vão está totalmente separadas das 
+funcionalidades de acesso ao banco de dados.
+
+\subsubsection{Models}
+São as entidades do sistema. Entidades são abstrações do mundo real modelados em 
+forma de tabelas que guardarão informações no banco de dados. Nessa arquitetura, 
+os modelos contemplarão também as associações entre as entidades, sendo que cada 
+entidade também terá alem de seus atributos, um conjunto de métodos para se 
+relacionar com o sistema.
+
+Os modelos implementarão um ORM(Object-Relational Mapping) para as views 
+acessarem o banco de dados, tornando o sistema independente do acesso ao banco. 
+
+\subsubsection{Views}
+Todo sistema é formado por um conjunto de regras de negócio. Uma regra de 
+negocio é fluxo lógico que deve ser processado para que seja gerado um resultado 
+válido.
+
+Uma View é responsável pela execução de um ou mais fluxos de execução que são 
+modelados em um caso de uso, ou seja, uma visão é uma implementação da regra de 
+negocio, elas são basicamente funções que aceitam como primeiro parâmetro uma 
+\textit{request} que representa uma requisição Web (além de outros parâmetros) 
+vinda do usuário pelo \textit{browser}, ela irá tratar essa requisição e 
+retornar uma resposta ao usuário.
+
+Dessa forma, cada caso de uso acaba tornando se uma view, sendo que views podem 
+dispor de outras views para realizarem suas funções. 
+
+\subsection{Desenho geral da arquitetura}
 \begin{figure}[H]
 \centering
-\includegraphics[width=5cm]{figuras/personas/figura_persona_1}
-\caption{Imagem de Charlie}
-\label{figura_persona_1}
+\includegraphics[width=15cm]{figuras/figura_arquitetura.png}
+\caption{Desenho Geral da Arquitetura}
+\label{figura_arquitetura}
 \end{figure}
 
+Nessa arquitetura, o browser do cliente utiliza de uma URL para realizar uma 
+requisição numa view, essa view pode utilizar os models para extrair dados do 
+banco de dados e ela própria criar um template ela mesma retornar como uma forma 
+de resposta ao usuário, ou então ela pode utilizar um template pronto apenas 
+moldar esses dados dentro de um template pronto e retornar isso ao browser do 
+cliente. 
 
-Empresa: Ele trabalha na TechSolutions, uma empresa pequena, mas está ganhando
-clientes e ampliando seus negócios.
+\section{Padrões de projeto}
+Um padrão de projeto representa o trabalho de uma pessoa que encontrou o mesmo 
+problema, tentou muitas soluções possíveis, selecionou e descreveu uma das 
+melhores e você deve se aproveitar disso.
 
-Idade: 24 anos.
+O conhecimento de padrões permite decidir o que deve ser feito e o que deve ser 
+evitado, sistemas baseados em padrões têm mais qualidade. Para o AskMath, forma 
+analisados alguns padrões  de projeto e selecionados aqueles que poderiam ser 
+satisfatoriamente aplicados. 
 
-Genêro: Masculino.
+\subsection{Proxy}
+Fornecer um substituto ou marcador da localização de outro objeto para controlar 
+o acesso a esse objeto, podemos controlar o acesso aos métodos de uma entidade 
+da seguinte forma: cria se uma classe EntidadeProxy que extende de Entidade, e 
+reimplementa cada um dos métodos, nessa nova implementação, você solicitar que o 
+usuário informe uma autenticação que possua acesso, ao informar, esse método ira 
+apenas chamar o método da Entidade.   
 
-Educação: Ensino técnico.
+\subsection{Chain of Responsibility}
+Evitar o acoplamento do remetente de uma solicitação ao seu receptor, ao dar a 
+mais de um objeto a oportunidade de tratar a solicitação. Encadear os objetos 
+receptores, passando a solicitação ao longo da cadeia até que um objeto a trate.
 
-Mídias: Lê a revista Exame e usa ativamente o email para trocar informações com 
-outros funcionários da empresa.
+\section{Objetivos e Restrições Arquiteturas}
 
-Objetivos: Como a empresa que Charlie trabalha está ampliando os negócios, ela
-necessita que alguns de seus funcionários possuam um melhor conhecimento na 
-área, por isso, Charlie decidiu investir num ensino superior, seu objetivo é 
-concluir seu curso de Engenharia de Software e voltar a trabalhar normalmente 
-para sua empresa.
+Apresentaremos aqui os requisitos e objetivos do software que têm algum impacto 
+na arquitetura, tais como: segurança, proteção de dados, privacidade, 
+portabilidade, distribuição, reuso. Também são descritos nesta seção restrições 
+arquiteturais que se aplicam ao projeto, tais  como:  estratégias  de  modelagem 
+ e  implementação,  ferramentas  de  desenvolvimento, sistemas legados. 
 
-Desafios: Charlie está com muita dificuldade na primeira disciplina de 
-Matemática de seu curso, como ele já concluiu o ensino médio há bastante tempo, 
-o mesmo não se lembra mais de como resolver questões simples de matemática como 
-funções polinomiais, racionais e trigonométricas. Ele começou a estudar, mas 
-não consegue encontrar uma forma intuitiva para verificar se está indo bem nos 
-seus estudos, ficando preso aos exercícios que ele encontra nos livros.
+\subsection{Requisitos básicos}
+\begin{alineascomponto}
+	\item Ubuntu Server como sistema operacional de produção.
+	\item Utilização apenas de componentes opensource.
+	\item PostgresSQL como sistema de gerenciamento de banco de dados.
+	\item Django como framework de desenvolvimento.	
+	\item O sistema devera ser Web.
+\end{alineascomponto}
 
-Como minha empresa pode ajudá-la: O AskMath possibilitará que Charlie estude 
-todos os conteúdos que ele tinha visto no ensino médio e já os tinha esquecido, 
-são lições agrupadas por disciplina, cada lição possui um conjunto de questões 
-e vídeo aulas criadas especialmente para pessoas com dificuldade nessas 
-disciplinas. Para as questões, nosso sistema possibilitará que Charlie veja 
-instantaneamente se sua resposta é correta ou não, ele também poderá pedir ajuda 
-e saltar uma questão o mesmo não se sinta a vontade para respondê-la naquele 
-momento. Com isso é possível que ele acompanhe através de estatísticas como 
-está seu desempenho no sistema.
-
-\section{Ruby - Bolsista de Graduação}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=5cm]{figuras/personas/figura_persona_2}
-\caption{Imagem de Ruby}
-\label{figura_persona_2}
-\end{figure}
-
-
-Empresa: Ela trabalha como bolsista de monitoria das disciplinas envolvendo 
-Matemática na Universidade Federal do Ceará.
-
-Idade: 21 anos.
-
-Genêro: Feminino.
-
-Educação: Ensino superior.
-
-Mídias: Usa ativamente o facebook, twitter e wattsapp.
-
-Objetivos: O principal objetivo de Ruby é terminar sua graduação e tentar uma 
-bolsa de mestrado numa universidade renomada.
-
-Desafios: Ruby como monitora das disciplinas de Matemática, não consegue se
-aproximar dos alunos para tirar suas dúvidas, segundo ela, "eles tem medo de 
-dizer para nós monitores que está com dificuldade", então Ruby está em busca de 
-novas formas de ajudar os estudantes que estão com dificuldades.
-
-Como minha empresa pode ajudá-la: Com o AskMath, Ruby poderá ajudar esses 
-alunos, ela poderá adicionar questões para os mesmos exercitarem 
-seus conhecimentos.
-
-\section{Samuel - Professor}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=5cm]{figuras/personas/figura_persona_3}
-\caption{Imagem de Samuel}
-\label{figura_persona_3}
-\end{figure}
-
-Empresa: Ele trabalho como professor da disciplina de Matemática Básica na
-Universidade Federal do Ceará.
-
-Idade: 59 anos.
-
-Genêro: Masculino.
-
-Educação: Doutorado.
-
-Mídias: Lê o jornal The New York Times e usa email para tirar dúvidas dos alunos
-Objetivos: Samuel é um professor exemplar, se preocupa muito em ensinar seus 
-alunos, seu principal objetivo é ensinar da melhor forma possível seus alunos, 
-de forma que todos possam seguir excelentes carreiras quando se formar e se 
-tornam ótimos profissionais.
-
-Desafios: Samuel gosta de acompanhar o andamento dos estudos de seus alunos,
-entretanto, quando ele os questiona sobre alguma dificuldade que eles estejam
-enfrentando, os mesmo dizem que está tudo bem, o que não reflete em suas notas.
-Sabendo disso, Samuel fica triste, já que não consegue saber como anda o nível 
-de aprendizado de sua turma e gostaria de ajudá-los mais.
-
-Como minha empresa pode ajudá-la: Com o AskMath, Samuel pode acompanhar o
-andamento de sua turma, e saber em quais conteúdos eles estão com mais 
-dificuldade, para ele poder focar mais neles. Samuel também poderá adicionar 
-ele mesmo os conteúdo que ele achar mais interessantes para seus alunos, além 
-disso, ele verá as dúvidas que eles postam no fórum e poderá ele mesmo 
-responder a essas dúvidas.
-
-\section{Stefane - Estudante do Ensino Médio}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=5cm]{figuras/personas/figura_persona_4}
-\caption{Imagem de Stefane}
-\label{figura_persona_4}
-\end{figure}
-
-Empresa: Ela trabalha no salão de beleza de sua mãe.
-
-Idade: 18 anos.
-
-Genêro: Feminino.
-
-Educação: Ensino médio.
-
-Mídias: Usa ativamente o facebook e WatssApp.
-
-Objetivos: Stefane busca concluir o ensino médio e tirar uma boa nota no ENEM 
-para tentar conseguir uma vaga para cursar Sistemas de Informação na UFC, que é 
-o curso de seus sonhos.
-
-Desafios: Stefane, como estudante, não gosta de estudar matemática por livros, 
-ela acha incomodo ter que levar seus livros enormes de matemática em sua bolsa 
-para o salão de beleza de sua mãe, mas ela quer ficar estudando enquanto não 
-aparece clientes no salão. Um outro problema de Stefane, é que às vezes, ela 
-fica com dúvida na resolução de alguma questão e precisa ligar para seus amigos 
-em busca de explicações que nem sempre encontra. Stefane também sente uma certa 
-dificuldade em aprender através de papéis, ela acha que nada é melhor do que a 
-explicação visual de uma pessoal.
-
-Como minha empresa pode ajudá-la: Com o AskMath, Stefane não precisará mais
-levar livros de Matemática em sua bolsa, para aprender matemática ela precisa 
-apenas de uma celular, isso possibilita que ela possa continuar estudando no 
-salão quando não tiver muitos clientes. Para solucionar as dúvidas de Stefane, 
-temos pessoas qualificadas esperando para ajudá-la, ela poderá publicar suas 
-dúvidas num fórum onde essas pessoas podem responder, assim como outros 
-pessoas, assim como Stefane, mas que já tenha tido a mesma dúvida. Como Stefane 
-não gosta de papéis, o AskMath possui um conjunto de vídeo aulas criadas por 
-pessoas capacitadas, que sabem a melhor forma de ensinar através de recursos 
-visuais.
+\subsection{Estratégias de implementação}
+\begin{alineascomponto}
+	\item Persistência de tipagem (ex: formato de CPF, Data) devem ser feitos 
+tanto no cliente através de Javascript, como no servidor através de 
+regex(Regular Expression).
+	\item Persistência de obrigatoriedade, verificar se todos os campos 
+obrigatórios foram  preenchidos deve ser feito tanto no cliente via javascript 
+como no servidor e nas duas opções deve-se apresentar alertas caso algum campo 
+seja enviado vazio para a requisição.
+    
+\end{alineascomponto}
