@@ -22,9 +22,6 @@
 \usepackage{float}
 \usepackage{graphicx}
 
-\newcommand{\membroumname}{Membro um:}
-\newcommand{\membrodoisname}{Membro dois:}
-
 % Comandos de dados - Membro da banca um
 \providecommand{\imprimirmembroumRotulo}{}
 \providecommand{\imprimirmembroum}{}
@@ -83,7 +80,6 @@
     \vspace*{1cm}
   \end{capa}
 }
-
 
 % folha de rosto
 
@@ -221,6 +217,12 @@ BANCA EXAMINADORA
 }
 \makeatother
 
+
+\addto\extrasngerman{%  
+	\def\sectionautorefname{Unterkapitel}%
+	\def\subsectionautorefname{Unterkapitel}%  
+	\def\subsubsectionautorefname{Unterkapitel}%
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

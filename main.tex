@@ -3,7 +3,22 @@
 \usepackage{hyperref}% http://ctan.org/pkg/hyperref
 \hypersetup{%
   colorlinks = false,
-  linkcolor  = black
+  linkcolor  = black,
+  pdftitle={Ambiente Virtual de Aprendizagem para Auxiliar no Processo de Ensino e Aprendizagem de Matemática}
+}
+
+\addto\captionsbrazil{
+	%% ajusta nomes padroes do babel
+	\renewcommand{\bibname}{REFER\^ENCIAS}
+	\renewcommand{\indexname}{\’Indice}
+	\renewcommand{\listfigurename}{Lista de ilustra\c{c}\~{o}es}
+	\renewcommand{\listtablename}{Lista de tabelas}
+	%% ajusta nomes usados com a macro \autoref
+	\renewcommand{\chapterautorefname}{Ap\^endice}
+	\renewcommand{\pageautorefname}{P\’agina}
+	\renewcommand{\sectionautorefname}{Se{\c c}\~ao}
+	\renewcommand{\subsectionautorefname}{Se{\c c}\~ao}
+	\renewcommand{\subsubsectionautorefname}{Se{\c c}\~ao}
 }
 
 
@@ -119,6 +134,8 @@
 
 \input{secoes/resultados_preliminares}
 
+\newpage
+
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
 % ----------------------------------------------------------
@@ -129,6 +146,7 @@
 \bibliography{bibtex/referencias}
 \addcontentsline{toc}{chapter}{REFERÊNCIAS}
 
+\newpage
 
 % Glossário (Consulte o manual da classe abntex2 para orientações sobre o glossário)
 %\glossary
