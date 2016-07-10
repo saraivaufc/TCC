@@ -123,13 +123,13 @@ Mode=LaTeX
 
 [item:bibtex/referencias.bib]
 archive=true
-column=19
+column=0
 encoding=UTF-8
 highlight=BibTeX
-line=375
+line=438
 mode=BibTeX
-open=false
-order=2
+open=true
+order=1
 
 [item:editaveis/apendices.tex]
 archive=true
@@ -163,10 +163,10 @@ order=0
 
 [item:main.tex]
 archive=true
-column=13
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=65
+line=0
 mode=LaTeX
 open=true
 order=0
@@ -178,7 +178,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=255
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [item:secoes/apendices/apendice_b.tex]
@@ -188,7 +188,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=118
 mode=LaTeX
-open=true
+open=false
 order=2
 
 [item:secoes/apendices/apendice_c.tex]
@@ -198,7 +198,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=113
 mode=LaTeX
-open=true
+open=false
 order=3
 
 [item:secoes/cronograma.tex]
@@ -208,18 +208,18 @@ encoding=UTF-8
 highlight=LaTeX
 line=23
 mode=LaTeX
-open=true
-order=4
+open=false
+order=1
 
 [item:secoes/introducao.tex]
 archive=true
-column=118
+column=530
 encoding=UTF-8
 highlight=LaTeX
-line=36
+line=15
 mode=LaTeX
 open=false
-order=3
+order=2
 
 [item:secoes/metodologia.tex]
 archive=true
@@ -272,8 +272,8 @@ open=false
 order=0
 
 [view-settings,view=0,item:bibtex/referencias.bib]
-CursorColumn=19
-CursorLine=375
+CursorColumn=0
+CursorLine=438
 JumpList=
 ViMarks=.,375,13,[,375,13,],375,16
 
@@ -296,8 +296,8 @@ JumpList=
 ViMarks=.,50,40,[,50,40,],50,50
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=13
-CursorLine=65
+CursorColumn=0
+CursorLine=0
 JumpList=
 ViMarks=.,147,0,[,148,0,],-1,-1
 
@@ -326,10 +326,10 @@ JumpList=
 ViMarks=.,23,22,[,23,22,],23,22
 
 [view-settings,view=0,item:secoes/introducao.tex]
-CursorColumn=118
-CursorLine=36
+CursorColumn=530
+CursorLine=15
 JumpList=
-ViMarks=.,35,195,[,36,0,],-1,-1
+ViMarks=.,27,163,[,27,161,],27,163
 
 [view-settings,view=0,item:secoes/metodologia.tex]
 CursorColumn=0
