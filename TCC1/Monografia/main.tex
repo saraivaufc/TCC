@@ -1,0 +1,167 @@
+\include{fixos/pacoteseclass}
+
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{%
+  colorlinks = false,
+  linkcolor  = black,
+  pdftitle={Ambiente Virtual de Aprendizagem para Auxiliar no Processo de Ensino e Aprendizagem de Matemática}
+}
+
+\addto\captionsbrazil{
+	%% ajusta nomes padroes do babel
+	\renewcommand{\bibname}{REFER\^ENCIAS}
+	\renewcommand{\indexname}{\’Indice}
+	\renewcommand{\listfigurename}{Lista de ilustra\c{c}\~{o}es}
+	\renewcommand{\listtablename}{Lista de tabelas}
+	%% ajusta nomes usados com a macro \autoref
+	\renewcommand{\chapterautorefname}{Ap\^endice}
+	\renewcommand{\pageautorefname}{P\’agina}
+	\renewcommand{\sectionautorefname}{Se{\c c}\~ao}
+	\renewcommand{\subsectionautorefname}{Se{\c c}\~ao}
+	\renewcommand{\subsubsectionautorefname}{Se{\c c}\~ao}
+}
+
+
+\newcommand\fnote[1]{\captionsetup{font=small}\caption*{#1}}
+
+% Informações de dados para CAPA e FOLHA DE ROSTO
+\titulo{Ambiente Virtual de Aprendizagem para Auxiliar no Processo de Ensino e Aprendizagem de Matemática}
+\autor{Marciano Machado Saraiva}
+\local{Quixadá}
+\data{Julho, 2016}
+\orientador{Prof. Me. Samy Soares Passos de Sá}
+%\coorientador{Nome Coorientador}
+
+% Escolher curso: Redes de Computadores (rc), Eng.Software (es), Ciências da Computação (cc) ou Sist.Informação (si)
+%\include{fixos/instituicao/rc}
+\include{fixos/instituicao/si}
+%\include{fixos/instituicao/es}
+%\include{fixos/instituicao/cc}
+
+%%criar um novo estilo de cabeçalhos e rodapés
+\makepagestyle{header_style}
+  %%cabeçalhos
+  \makeoddhead{header_style} %%pagina ímpar ou com oneside
+     {}
+     {}
+     {\thepage} 
+
+
+\begin{document}
+\frenchspacing 
+
+%Formatação de título de seções
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+% Capa
+\imprimircapa
+
+%----------- Apenas TCC 2
+% Folha de rosto (* indica que haverá a ficha bibliográfica)
+%\imprimirfolhaderosto
+
+% Ficha Bibliográfica
+%\include{fixos/fichabibliografica}
+
+% Errata
+%\include{editaveis/errata}
+
+% Folha de Aprovação
+% DEVE ser modificada para adicionar os membros da banca
+%\include{editaveis/folhadeaprovacao}
+%\imprimirfolhadeaprovacao
+
+% Dedicatória
+%\include{editaveis/dedicatoria}
+
+% Agradecimentos
+%\include{editaveis/agradecimentos}
+
+% Epígrafe
+%\include{editaveis/epigrafe}
+
+% RESUMOS
+%\include{resumo/ptbr}
+%\include{resumo/us}
+%\include{resumo/fr}
+%\include{resumo/es}
+
+% Lista de ilustrações
+% \pdfbookmark[0]{\listfigurename}{lof}
+% \listoffigures*
+% \clearpage
+
+% Lista de tabelas
+%\pdfbookmark[0]{\listtablename}{lot}
+%\listoftables*
+%\cleardoublepage
+
+% Abreviaturas e Siglas
+%\include{editaveis/siglas}
+
+% Símbolos
+%\include{editaveis/simbolos}
+%----------- fim - Apenas TCC 2
+
+
+% Sumário
+
+\imprimirsumario
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+%aplicação de estilo de cabeçalho
+\pagestyle{header_style}
+
+%uso do input pois o include dá quebra de página no final
+\input{secoes/introducao}
+
+\input{secoes/revisao_bibliografica}
+
+\input{secoes/metodologia}
+
+\input{secoes/resultados_preliminares}
+
+\newpage
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+%\postextual
+
+% Referências bibliográficas
+
+\bibliography{bibtex/referencias}
+\addcontentsline{toc}{chapter}{REFERÊNCIAS}
+
+\newpage
+
+% Glossário (Consulte o manual da classe abntex2 para orientações sobre o glossário)
+%\glossary
+
+% Apêndices
+\input{editaveis/apendices}
+
+% Anexos
+% \input{editaveis/anexos}
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+%\phantompart
+%\printindex
+%---------------------------------------------------------------------
+
+\end{document}
