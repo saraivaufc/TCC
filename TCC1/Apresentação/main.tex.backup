@@ -22,6 +22,7 @@
 \usepackage{ragged2e}
 \usepackage{etoolbox}
 \usepackage{lipsum}
+\usepackage{amssymb}
 % ---
 
 % ---
@@ -35,8 +36,9 @@
 \renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm} 
 
 % Colocando numero de paginas no slide
-\setbeamertemplate{footline}[frame number]
-\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{caption}[numbered]{}
+
 % Tela cheia
 %\hypersetup{pdfpagemode=FullScreen}
 % ---
@@ -45,7 +47,7 @@
 % --- Informações do documento ---
 \logo{\includegraphics[scale=0.15]{figuras/logo.png}}
 \title{Ambiente Virtual de Aprendizagem para Auxiliar no Processo de Ensino e Aprendizagem de Matemática}
-\author{Marciano Machado Saraiva}
+\author[]{Marciano Machado Saraiva}
 \institute{
 Orientador: Prof. Me. Samy Soares Passos de Sá\\[2 ex]
 Universidade Federal do Ceará
@@ -77,7 +79,8 @@ Universidade Federal do Ceará
 
 \begin{itemize}
 	\item Grande número de reprovações e desistências em turmas iniciais de Matemática de cursos na Universidade Federal do Ceará - Campus Quixadá.
-	\item A Organização para Cooperação e Desenvolvimento Econômico(OECD) revelou que em 2015, 67.1\% do alunos estavam abaixo do nível 2 (os níveis vão de 1 a 6) na escala do PISA \cite{pisainfocus2016}.
+	\item A Organização para Cooperação e Desenvolvimento Econômico(OECD) revelou que em 2015, 67.1\% do alunos brasileiros estavam abaixo do nível 2 (os níveis vão de 1 a 6) na escala do 
+PISA \cite{pisainfocus2016}.
 
 \end{itemize}
 
@@ -90,6 +93,7 @@ Universidade Federal do Ceará
 
 \begin{block}{Objetivo Geral}
 	Desenvolver um Ambiente Virtual de Aprendizagem para auxiliar no processo de ensino e aprendizagem de matemática por alunos dentro e fora da sala de aula.
+	\pause
 \end{block}
 
 \begin{block}{Objetivos Específicos}
@@ -110,17 +114,58 @@ Universidade Federal do Ceará
 \section{Revisão Bibliográfica}
 
 \begin{frame}{Revisão Bibliográfica}
-  \begin{itemize}
-  	\item Metodologias no Ensino da Matemática
-    	\begin{itemize}
-        	\item Aula Expositiva
-            \item Resolução de Problemas
-            \item Modelagem Matemática
-            \item O uso de computadores
-        \end{itemize}
-    \item Ambientes Virtuais de Aprendizagem
-    \item Gamificação 
-  \end{itemize}
+\begin{overprint}
+\only<+>{
+Metodologias no Ensino da Matemática:
+\begin{itemize}
+	\item \textbf{Aula Expositiva}
+		\begin{itemize} 
+		\item[$\longrightarrow$] Educador como \'unico detentor do conhecimento %ignorando assim os conhecimentos pr\'evios dos alunos e tornando o
+		\item[$\longrightarrow$] Aluno \'e um sujeito passivo da aprendizagem
+		\item[$\longrightarrow$] Crit\'erios avaliativos se voltam para exerc\'icios de fixação que tendem a incentivar o aluno a apenas decorar o que lhes foi apresentado
+		\end{itemize}
+	\item \textbf{Resolução de Problemas}
+		\begin{itemize} 
+		\item[$\longrightarrow$] Apresentação de situações abertas e sugestivas 
+		\item[$\longrightarrow$] Exige do aluno uma atitude ativa para buscar suas respostas
+		\item[$\longrightarrow$] Ajuda o aluno a desenvolver sua capacidade de aprender a aprender
+		\end{itemize}
+	\item \textbf{Modelagem Matemática}
+		\begin{itemize} 
+		\item[$\longrightarrow$] Transformar problemas da realidade em problemas matemáticos 
+		\item[$\longrightarrow$] Resolver os problemas interpretando suas soluções na linguagem do mundo real 
+		\end{itemize}
+	\item \textbf{O uso de computadores}
+		\begin{itemize} 
+		\item[$\longrightarrow$] Uma máquina que possibilita testar ideias ou hipóteses
+		\end{itemize}
+\end{itemize}
+}
+\only<+>{
+\textbf{Ambiente Virtual de Aprendizagem} \'e em espaço social, constituído de interações cognitivo-sociais sobre um objeto de conhecimento \cite{valentini2010aprendizagem}.
+
+Algumas características s\~ao:
+\begin{itemize}
+ \item[$\longrightarrow$] a comunicação entre tutores e alunos
+ \item[$\longrightarrow$] a auto-avaliação e avaliação sumativa
+ \item[$\longrightarrow$] entrega de recursos de aprendizagem e materiais
+\end{itemize}
+
+}
+\only<+>{
+\textbf{Gamifica\c{c}\~ao} \'e emprego de conceitos e técnicas criadas e utilizadas em jogos para auxiliar na educação \cite{fardo2013gamificaccao}.
+
+Algumas t\'ecnicas s\~ao:
+\begin{itemize}
+ \item[$\longrightarrow$] Sistema de Pontos
+ \item[$\longrightarrow$] Medalhas e Conquistas
+ \item[$\longrightarrow$] Desafios e Missões
+\end{itemize}
+
+
+}
+\end{overprint}
+
 \end{frame}
 
 % ----------------- NOVO SLIDE --------------------------------
@@ -128,102 +173,151 @@ Universidade Federal do Ceará
 \frametitle{Revisão Bibliográfica}
 \framesubtitle{Trabalhos Relacionados}
 
-\begin{itemize}
-	\item The one world schoolhouse: Education reimagined.
-    \item ActiveMath: A generic and adaptive web-based learning environment.
-    \item Duolingo: Learn a Language for Free while Helping to Translate the Web.
-    \item Resolução de problemas em ambientes virtuais de aprendizagem num curso de licenciatura em matemática na modalidade a distância.
-\end{itemize}
+\begin{overprint}
+
+\only<+>{
+The one world schoolhouse: Education reimagined.\\
+	A Khan Academy tem o objetivo oferecer exercícios, vídeos de instrução e um painel de aprendizado personalizado que habilita os estudantes a aprender no seu próprio ritmo.
+	\begin{itemize}
+	\item[$\longrightarrow$] adas
+	\item[$\longrightarrow$] sadasd
+	\item[$\longrightarrow$] asdasd
+	\end{itemize}
+}
+\only<+>{
+ActiveMath: A generic and adaptive web-based learning environment.
+}
+\only<+>{
+Duolingo: Learn a Language for Free while Helping to Translate the Web.
+}
+\only<+>{
+Resolução de problemas em ambientes virtuais de aprendizagem num curso de licenciatura em matemática na modalidade a distância.
+}
+
+\end{overprint}
+
 
 \end{frame}
 
 % ----------------- NOVO SLIDE --------------------------------
 \section{Descrição da Proposta}
 
+\setcounter{figure}{0}
+
 \begin{frame}{Descrição da Proposta}
 
 \begin{overprint}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem1.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem2.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem3.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem4.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem5.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem6.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem7.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem8.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem9.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
+\only<+>{
+	\begin{figure}[H]
+	\centering
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem10.png}
+	\floatfoot{Fonte: Elaborada pelo autor}
+	\end{figure}
+}
 
-\only<1>{
+\only<+>{
 	\begin{figure}[H]
 	\centering
-	\caption{Representa\c{c}\~ao }
-	\includegraphics[width=10cm]{figuras/proposta/imagem1.png}
+	\caption{Representa\c{c}\~ao do nosso Modelo de Aprendizagem}
+	\includegraphics[width=8cm]{figuras/proposta/imagem11.png}
 	\floatfoot{Fonte: Elaborada pelo autor}
 	\end{figure}
 }
-\only<2>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem2.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
+
+
+\only<+>{
+	\begin{table}[H]
+		\caption{Compara\c{c}\~ao entre os tradicionais modelos de aprendizagem e o nosso.}
+		\resizebox{8cm}{!}{
+			
+			\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Modelos Tradicionais}                                        & \textbf{Nosso Modelo}                                                 \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Centrado no professor\end{tabular}      & Centrado no aluno                                                     \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Absorção passiva\end{tabular}           & \begin{tabular}[c]{@{}l@{}}Participação ativa do aluno\end{tabular} \\ \hline
+			O professor como especialista                                        & O professor como guia                                                 \\ \hline
+			Estático                                                             & Dinâmico                                                              \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Aprendizado predeterminado\end{tabular} & \begin{tabular}[c]{@{}l@{}}Aprender a aprender\end{tabular}         \\ \hline
+			\end{tabular}
+		
+		}
+		\floatfoot{Fonte: Elaborada pelo autor}
+	\end{table}
 }
-\only<3>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem3.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
-\only<4>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem4.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
-\only<5>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem5.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
-\only<6>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem6.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
-\only<7>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem7.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
-\only<8>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem8.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
-\only<9>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem9.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
-\only<10>{
-	\begin{figure}[H]
-	\centering
-	\caption{Turmas}
-	\includegraphics[width=10cm]{figuras/proposta/imagem10.png}
-	\floatfoot{Fonte: Elaborada pelo autor}
-	\end{figure}
-}
+
 
 \end{overprint}
 
@@ -284,6 +378,7 @@ O Projeto de Software é à atividade de engenharia cujo foco é definir ``como'
 \pause
 \begin{enumerate}
 	\item Definimos a Arquitetura do sistema.
+	\pause
     \item Escolhemos as ferramentas utilizadas.
 \end{enumerate}
 \end{frame}
@@ -347,15 +442,16 @@ Federal do Ceará - Campus Quixadá.
 
 % ----------------- NOVO SLIDE --------------------------------
 
+\setcounter{figure}{1}
+
 \begin{frame}{Procedimentos Metodológicos}
 \frametitle{Procedimentos Metodológicos}
 \framesubtitle{Aplicação da Solução na Universidade Federal do Ceará - Campus Quixadá}
 
 \begin{figure}[H]
 \centering
-\caption{Turmas}
+\caption{Turmas em que o sistema ser\'a aplicado}
 \includegraphics[width=10cm]{figuras/aplicacao.png}
-\label{figura_aplicacao}
 \floatfoot{Fonte: Elaborada pelo autor}
 \end{figure}
 
@@ -377,19 +473,40 @@ Federal do Ceará - Campus Quixadá.
 \begin{overprint}
 
 \only<1>{
-	
+	\begin{enumerate}
+    	\item Definição do Processo \includegraphics[width=0.03\textwidth]{figuras/ok}
+        \item Levantamento e Análise de Requisitos \includegraphics[width=0.03\textwidth]{figuras/ok}
+        \item Projeto do Sistema \includegraphics[width=0.03\textwidth]{figuras/ok}
+        \item Implementação do Sistema \includegraphics[width=0.03\textwidth]{figuras/deploy}
+        \item Verificação e Validação
+        \item Definição do Conteúdo para o Sistema \includegraphics[width=0.03\textwidth]{figuras/deploy}
+        \item Aplicação da Solução na Universidade Federal do Ceará - Campus Quixadá
+    \end{enumerate}
 }
 
 \only<2>{
-	\begin{columns}
-		\begin{column}{0.5\textwidth}
+Etapa de Implementação:
+	\begin{columns}[t]
+		\begin{column}{.425\textwidth}
 			\begin{block}{Módulos Conclu\'idos}
-			
+				\begin{itemize}
+					\item Gerenciador de Usuários
+					\item Gerenciador de Turmas
+					\item Gerenciador de Disciplinas
+					\item Gerenciador de Lições
+					\item Gerenciador de Problemas
+					\item Gerenciador de Pontuação
+					\item F\'orum
+				\end{itemize}
 			\end{block}
 		\end{column}
-		\begin{column}{0.5\textwidth}  %%<--- here
+		\begin{column}{.425\textwidth}  %%<--- here
 			\begin{block}{Módulos em Desenvolvimento}
-			
+				\begin{itemize}
+					\item Gerenciador de Progresso
+					\item Gerador de Estatísticas
+					\item Ranking
+				\end{itemize}
 			\end{block}
 		\end{column}
 	\end{columns}
@@ -399,11 +516,66 @@ Federal do Ceará - Campus Quixadá.
 
 \end{frame}
 
+\begin{frame}{Resultados Preliminares}
+	\begin{figure}[H]
+	\centering
+	\caption{Tela Inicial do Sistema}
+	\includegraphics[width=8cm]{figuras/askmath/1.png}
+	\floatfoot{Fonte: \url{www.askmath.quixada.ufc.br} }
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Resultados Preliminares}
+	\begin{figure}[H]
+	\centering
+	\caption{Tela de Administra\c{c}\~ao do Sistema}
+	\includegraphics[width=8cm]{figuras/askmath/2.png}
+	\floatfoot{Fonte: \url{www.askmath.quixada.ufc.br} }
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Resultados Preliminares}
+	\begin{figure}[H]
+	\centering
+	\caption{Tela de Problemas do Aluno}
+	\includegraphics[width=8cm]{figuras/askmath/3.png}
+	\floatfoot{Fonte: \url{www.askmath.quixada.ufc.br} }
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Resultados Preliminares}
+	\begin{figure}[H]
+	\centering
+	\caption{Tela do F\'orum de Discuss\~oes}
+	\includegraphics[width=8cm]{figuras/askmath/4.png}
+	\floatfoot{Fonte: \url{www.askmath.quixada.ufc.br} }
+	\end{figure}
+\end{frame}
+
 % ----------------- NOVO SLIDE --------------------------------
 \section{Referências}
 
-\begin{frame}{Referências}
+\begin{frame}[allowframebreaks]{Referências}
 	\bibliography{referencias}
+\end{frame}
+
+% ----------------- NOVO SLIDE --------------------------------
+
+\section{Coment\'arios}
+
+\begin{frame}
+	\begin{columns}
+		\begin{column}{3cm}
+			\includegraphics[height=3cm]{figuras/logo.png}
+		\end{column}
+		\begin{column}{7cm}
+			\begin{flushright}
+				\centering
+				\vskip 0.5cm
+				\Huge Obrigado!
+			\end{flushright}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 
