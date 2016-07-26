@@ -22,127 +22,47 @@
 \usepackage{float}
 \usepackage{graphicx}
 
-% Comandos de dados - Membro da banca um
-\providecommand{\imprimirmembroumRotulo}{}
-\providecommand{\imprimirmembroum}{}
-\newcommand{\membroum}[2][\membroumname]%
-  {\renewcommand{\imprimirmembroumRotulo}{#1}%
-   \renewcommand{\imprimirmembroum}{#2}}
-   
-% Comandos de dados - Membro da banca dois
-\providecommand{\imprimirmembrodoisRotulo}{}
-\providecommand{\imprimirmembrodois}{}
-\newcommand{\membrodois}[2][\membrodoisname]%
-  {\renewcommand{\imprimirmembrodoisRotulo}{#1}%
-   \renewcommand{\imprimirmembrodois}{#2}}
+% definindo a banca avaliadora
+\input{editaveis/banca}
 
-% alterando a capa
-\renewcommand{\imprimircapa}{%
-  \begin{capa}%
-    \center
-	\begin{figure}
-	\centering
-	\includegraphics[scale=0.5]{ufc-brasao.pdf}
-	\end{figure}
-    {\bfseries\large\imprimirinstituicao\vspace*{3.5cm}}
-
-    {\bfseries\large\imprimirautor\vspace*{3.5cm}}
-
-    {\bfseries\large\imprimirtitulo}
-    \vspace*{\fill}
-
-    {\bfseries\large\imprimirlocal}
-    \par
-    {\bfseries\large\imprimirdata}
-
-    \vspace*{0.5cm}
-  \end{capa}
+% capa
+\renewcommand{\imprimircapa}{
+	\input{editaveis/capa}
 }
-
 
 % folha de rosto
-
-\makeatletter
-
 \renewcommand{\folhaderostocontent}{
-\begin{center}
-{\bfseries\large\imprimirautor}
-
-\vspace*{3.5cm}
-
-{\bfseries\large\imprimirtitulo}
-
-\vspace*{\fill}
-
-\abntex@ifnotempty{\imprimirpreambulo}{%
-  \hspace{.45\textwidth}
-  \begin{minipage}{.5\textwidth}
-  \SingleSpacing
-  \imprimirpreambulo
-  \end{minipage}%
-}%
-
-\abntex@ifnotempty{\imprimirorientador}{%
-  \hspace{.45\textwidth}
-  \begin{minipage}{.5\textwidth}
-  \SingleSpacing
-  Orientador: \imprimirorientador
-  \SingleSpacing
-  \abntex@ifnotempty{\imprimircoorientador}{%
-    Co-Orientador: \imprimircoorientador
-  }%
-  \end{minipage}%
-  \vspace*{\fill}
-}%
-
-\vspace*{\fill}
-
-{\bfseries\large\imprimirlocal}
-\par
-{\bfseries\large\imprimirdata}
-\vspace*{1cm}
-\end{center}
+	\input{editaveis/folhaderosto}
 }
+
+% ficha bibliografica
+\newcommand{\imprimirfichabibliografica}{
+	\include{editaveis/fichabibliografica}
+}
+
+% folha de aprovação
+\newcommand{\imprimirfolhadeaprovacao}{
+	\input{editaveis/folhadeaprovacao}
+}
+
+% dedicat\'oria
+\newcommand{\imprimirdedicatoria}{
+	\include{editaveis/dedicatoria}
+}
+
+% agradecimentos
+\newcommand{\imprimiragradecimentos}{
+	\include{editaveis/agradecimentos}
+}
+
+% epigrafe
+\newcommand{\imprimirepigrafe}{
+	\include{editaveis/epigrafe}
+}
+
 
 \makeatother
 
-%folha de aprovação
-\newcommand{\imprimirfolhadeaprovacao}{
-\begin{folhadeaprovacao}
-\begin{center}
-{\large\imprimirautor}
-
-\vspace*{\fill}\vspace*{\fill}
-{\large\imprimirtitulo}
-\vspace*{\fill}
-
-\hspace{.45\textwidth}
-\begin{minipage}{.5\textwidth}
-\imprimirpreambulo
-\end{minipage}%
-\vspace*{\fill}
-\end{center}
-
-Aprovada em
-
-\begin{center}
-BANCA EXAMINADORA
-\end{center}
-
-\assinatura{\textbf{\imprimirorientador (Orientador)} \\ Universidade Federal do Ceará}
-\assinatura{\textbf{\imprimirmembroum} \\ Universidade Federal do Ceará}
-\assinatura{\textbf{\imprimirmembrodois} \\ Universidade Federal do Ceará}
-
-\begin{center}
-\vspace*{0.5cm}
-{\large\imprimirlocal}
-\par
-{\large\imprimirdata}
-\vspace*{1cm}   
-\end{center}
-
-\end{folhadeaprovacao}
-}
 
 % ---
 % FIM DAS CUSTOMIZACOES PARA A UNIVERSIDADE FEDERAL DO CEARA
@@ -152,9 +72,7 @@ BANCA EXAMINADORA
 \renewcommand{\contentsname}{}
 
 \newcommand{\imprimirsumario}{ %
-	\pdfbookmark[0]{SUM\'ARIO}{toc}
-	\tableofcontents*
-	\cleardoublepage
+	\input{editaveis/sumario}
 }
 
 % Modifica o espaçamento no sumário
@@ -164,6 +82,7 @@ BANCA EXAMINADORA
 \setlength{\cftbeforesectionskip}{0pt}
 \setlength{\cftbeforesubsubsectionskip}{0pt}
 \setlength{\cftbeforechapterskip}{0pt}
+
 
 \renewcommand\cftchapterfont{\normalfont\bfseries}
 \renewcommand\cftsectionfont{\normalsize\normalfont\bfseries}

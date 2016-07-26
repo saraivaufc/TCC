@@ -44,23 +44,24 @@
 \imprimirfolhaderosto
 
 % Ficha Bibliográfica
-\imprimirfichabibliografica
+\include{fixos/fichabibliografica}
 
 % Errata
 % Adicionar apenas se o texto contiver melhorias ap'os a publica\c{c}\~ao
 %\include{editaveis/errata}
 
 % Folha de Aprovação
+% DEVE ser modificada para adicionar os membros da banca
 \imprimirfolhadeaprovacao
 
 % Dedicatória
-\imprimirdedicatoria
+\include{editaveis/dedicatoria}
 
 % Agradecimentos
-\imprimiragradecimentos
+\include{editaveis/agradecimentos}
 
 % Epígrafe
-\imprimirepigrafe
+\include{editaveis/epigrafe}
 
 % Resumos
 \include{resumo/ptbr}

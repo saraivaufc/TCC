@@ -40,12 +40,14 @@
 \usepackage{multirow}
 \usepackage{titlesec}
 
+
+
+
 %My Packages
 \usepackage{threeparttable}
 \usepackage{wasysym}
 
 \addto\captionsbrazil{
-	\renewcommand{\bibname}{REFER\^ENCIAS}
 	\renewcommand{\folhaderostoname}{FOLHA DE ROSTO}
 	\renewcommand{\epigraphname}{EP\'iGRAFE}
 	\renewcommand{\dedicatorianame}{DEDICAT\'ORIA}
@@ -61,16 +63,14 @@
 	\renewcommand{\resumoname}{RESUMO}
 	\renewcommand{\listadesiglasname}{LISTA DE ABREVIATURAS E SIGLAS}
 	\renewcommand{\listadesimbolosname}{LISTA DE SÍMBOLOS}
-	\renewcommand{\listfigurename}{LISTA DE ILUSTRAÇÕES}
-	\renewcommand{\listtablename}{LISTA DE TABELAS}
 	\renewcommand{\fontename}{FONTE}
 	\renewcommand{\notaname}{NOTA}
 	%% adjusts names used by \autoref
-	\renewcommand{\pageautorefname}{P\'agina}
-	\renewcommand{\sectionautorefname}{Se\c{c}\~ao}
-	\renewcommand{\subsectionautorefname}{Subse\c{c}\~ao}
-	\renewcommand{\subsubsectionautorefname}{Subse\c{c}\~ao}
-	\renewcommand{\paragraphautorefname}{Paragrafo}
+	\renewcommand{\pageautorefname}{P\'AGINA}
+	\renewcommand{\sectionautorefname}{SE\c{C}\~AO}
+	\renewcommand{\subsectionautorefname}{SE\c{C}\~AO}
+	\renewcommand{\subsubsectionautorefname}{SE\c{C}\~AO}
+	\renewcommand{\paragraphautorefname}{SE\c{C}\~AO}
 }
 
 

@@ -40,13 +40,13 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-\begin{figure}[H]
-  \centering
-  \includegraphics[scale=0.5]{ufc-brasao.pdf}
-\end{figure}
-    {\bfseries\large\imprimirinstituicao\vspace*{3.5cm}}
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{ufc-brasao.pdf}
+	\end{figure}
+    {\bfseries\Large\imprimirinstituicao\vspace*{3cm}}
 
-    {\bfseries\Large\imprimirautor\vspace*{3.5cm}}
+    {\bfseries\Large\imprimirautor\vspace*{3cm}}
 
     {\bfseries\Large\imprimirtitulo}
     \vspace*{\fill}
@@ -55,7 +55,6 @@
     \par
     {\bfseries\Large\imprimirdata}
 
-    \vspace*{1cm}
   \end{capa}
 }
 
@@ -66,11 +65,11 @@
 
 \renewcommand{\folhaderostocontent}{
 \begin{center}
-{\bfseries\Large\imprimirautor}
+{\bfseries\large\imprimirautor}
 
 \vspace*{3.5cm}
 
-{\bfseries\Large\imprimirtitulo}
+{\bfseries\large\imprimirtitulo}
 
 \vspace*{\fill}
 
@@ -97,10 +96,9 @@
 
 \vspace*{\fill}
 
-{\bfseries\Large\imprimirlocal}
+{\bfseries\large\imprimirlocal}
 \par
-{\bfseries\Large\imprimirdata}
-\vspace*{1cm}
+{\bfseries\large\imprimirdata}
 \end{center}
 }
 
@@ -110,10 +108,10 @@
 \newcommand{\imprimirfolhadeaprovacao}{
 \begin{folhadeaprovacao}
 \begin{center}
-{\ABNTEXchapterfont\imprimirautor}
+{\large\imprimirautor}
 
 \vspace*{\fill}\vspace*{\fill}
-{\ABNTEXchapterfont\imprimirtitulo}
+{\large\imprimirtitulo}
 \vspace*{\fill}
 
 \hspace{.45\textwidth}
@@ -129,17 +127,10 @@ Aprovada em
 BANCA EXAMINADORA
 \end{center}
 
-\assinatura{\textbf{\imprimirorientador (Orientador)} \\ Universidade Federal do Ceará}
-\assinatura{\textbf{\imprimirmembroum} \\ Universidade Federal do Ceará}
-\assinatura{\textbf{\imprimirmembrodois} \\ Universidade Federal do Ceará}
+\assinatura{\textbf{\imprimirorientador (Orientador)} \\ Universidade Federal do Ceará(UFC)}
+\assinatura{\textbf{\imprimirmembroum} \\ Universidade Federal do Ceará(UFC)}
+\assinatura{\textbf{\imprimirmembrodois} \\ Universidade Federal do Ceará(UFC)}
 
-\begin{center}
-\vspace*{0.5cm}
-{\large\imprimirlocal}
-\par
-{\large\imprimirdata}
-\vspace*{1cm}   
-\end{center}
 
 \end{folhadeaprovacao}
 }
