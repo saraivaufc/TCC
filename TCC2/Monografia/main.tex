@@ -22,16 +22,13 @@
      {}
      {\thepage} 
 
+%Formatação de título de seções
+\titleformat{\section}{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
 
 \begin{document}
 \frenchspacing
-%Formatação de título de seções
-\titleformat{\section}
-{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}
-{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}
-{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
 
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
@@ -113,13 +110,14 @@
 
 % Referências bibliográficas
 
-\addcontentsline{toc}{chapter}{REFERÊNCIAS}
+%Formatação de título de seções
+
 \bibliography{bibtex/referencias}
 
 \newpage
 
 % Glossário (Consulte o manual da classe abntex2 para orientações sobre o glossário)
-%\glossary
+%\imprimirglossario
 
 % Apêndices
 \input{editaveis/apendices}

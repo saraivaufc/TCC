@@ -21,6 +21,9 @@
 % ---
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{nomencl}
+
+\makenomenclature
 
 % definindo a banca avaliadora
 \input{editaveis/banca}
@@ -61,6 +64,11 @@
 }
 
 
+% glossario
+\newcommand{\imprimirglossario}{
+	\include{editaveis/glossario}
+}
+
 \makeatother
 
 
@@ -74,6 +82,7 @@
 \newcommand{\imprimirsumario}{ %
 	\input{editaveis/sumario}
 }
+
 
 % Modifica o espaçamento no sumário
 % Nao ha espacos
@@ -121,7 +130,6 @@
 	\def\subsectionautorefname{Unterkapitel}%  
 	\def\subsubsectionautorefname{Unterkapitel}%
 }
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Apendices             %%
