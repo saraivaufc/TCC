@@ -1,3 +1,7 @@
+% arara: pdflatex
+% arara: nomencl
+% arara: pdflatex
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%      Para começar a usar este template, primeiro, %%
 %% você dever criar uma conta no ShareLates. Depois, %%
@@ -14,7 +18,7 @@
 %% Review:                                           %%
 %%                                                   %%
 %% - Eliene Maria Vieira de Moura;                   %%
-%% - Francisco Edvander Pires Santos;                %%
+%% - Francisco Edvander Pires Santos;                %%  
 %% - Izabel Lima dos Santos;                         %%
 %% - Juliana Soares Lima;                            %%
 %% - Kalline Yasmin Soares Feitosa.                  %%
@@ -35,7 +39,7 @@
 %% are available on http://abntex2.googlecode.com/   %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[
+\documentclass[        
     a4paper,          % Tamanho da folha A4
     12pt,             % Tamanho da fonte 12pt
     chapter=TITLE,    % Todos os capitulos devem ter caixa alta
@@ -69,7 +73,7 @@
 % Remove as bordas vermelhas e verdes do PDF gerado
 % Coloque 'sim' pare remover
 
-\removerbordasdohyperlink{sim}
+\removerbordasdohyperlink{sim} 
 
 % Adiciona a cor Azul a todos os hyperlinks
 
@@ -81,47 +85,47 @@
 
 \ies{Universidade Federal do Ceará}
 \iessigla{UFC}
-\centro{Centro de Xxxxxxxx}
+\centro{Campus Quixadá}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%        Informação para TCC de Graduacao %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\graduacaoem{Engenharia Xxxxxxx}
+\graduacaoem{Sistemas de Informação}
 \habilitacao{bacharel} % Pode colocar tambem 'licenciada'
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%     Informação para TCC de Especializacao       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\especializacaoem{Descargas Atmosféricas}
+% \especializacaoem{Descargas Atmosféricas}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%         Informação para Dissertacao             %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\programamestrado{Programa de Pós-Graduação em Xxxxxxx}
-\nomedomestrado{Mestrado Acadêmico em Xxxxxxx}
-\mestreem{Engenharia Xxxxxx}
-\areadeconcentracaomestrado{Engenharia Xxxxxx}
+% \programamestrado{Programa de Pós-Graduação em Xxxxxxx}
+% \nomedomestrado{Mestrado Acadêmico em Xxxxxxx}
+% \mestreem{Engenharia Xxxxxx}
+% \areadeconcentracaomestrado{Engenharia Xxxxxx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Informação para Tese              %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\programadoutorado{Programa de Pós-Graduação em Xxxxxx}
-\nomedodoutorado{Doutorado em Xxxxxxx}
-\doutorem{Engenharia Xxxxxx}
-\areadeconcentracaodoutorado{Engenharia Xxxxxxx}
+% \programadoutorado{Programa de Pós-Graduação em Xxxxxx}
+% \nomedodoutorado{Doutorado em Xxxxxxx}
+% \doutorem{Engenharia Xxxxxx}
+% \areadeconcentracaodoutorado{Engenharia Xxxxxxx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Informacoes relacionadas ao trabalho     %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\autor{Nome Sobrenome}
-\titulo{Título do Trabalho}
+\autor{Marciano Machado Saraiva}
+\titulo{Ambiente Virtual de Aprendizagem para Auxiliar no Processo de Ensino e Aprendizagem de Matemática}
 \data{2016}
-\local{Fortaleza}
+\local{Quixadá}
 
 % Exemplo: \dataaprovacao{01 de Janeiro de 2012}
 \dataaprovacao{}
@@ -130,9 +134,9 @@
 %%     Informação sobre o Orientador       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\orientador{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
+\orientador{Prof. Me. Samy Soares Passos de Sá}
 \orientadories{Universidade Federal do Ceará (UFC)}
-\orientadorcentro{Centro de Ciências e Tecnologia (CCT)}
+\orientadorcentro{Campus Quixadá}
 \orientadorfeminino{nao} % Coloque 'sim' se for do sexo feminino
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -156,23 +160,25 @@
 % \membrodabancadois{Prof. Dr. Fulano de Tal}
 % \membrodabancadoisies{Universidade Federal do Ceará - UFC}
 
-\membrodabancadois{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
-\membrodabancadoiscentro{Faculdade de Filosofia Dom Aureliano Matos (FAFIDAM)}
-\membrodabancadoisies{Universidade do Membro da Banca Dois (SIGLA)}
-\membrodabancatres{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
-\membrodabancatrescentro{Centro de Ciências e Tecnologia (CCT)}
-\membrodabancatresies{Universidade do Membro da Banca Três (SIGLA)}
-\membrodabancaquatro{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
-\membrodabancaquatrocentro{Centro de Ciências e Tecnologia (CCT)}
-\membrodabancaquatroies{Universidade do Membro da Banca Quatro (SIGLA)}
-\membrodabancacinco{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
-\membrodabancacincocentro{Teste}
-\membrodabancacincoies{Universidade do Membro da Banca Cinco (SIGLA)}
-\membrodabancaseis{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
-\membrodabancaseiscentro{}
-\membrodabancaseisies{Universidade do Membro da Banca Seis (SIGLA)}
+\membrodabancadois{Prof. Dr. Wladmir Araujo Tavares}
+\membrodabancadoiscentro{Campus Quixadá}
+\membrodabancadoisies{Universidade Federal do Ceará - UFC}
 
-\begin{document}
+\membrodabancatres{Prof. Me. Carlos Roberto Rodrigues Filho}
+\membrodabancatrescentro{Campus Quixadá}
+\membrodabancatresies{Universidade Federal do Ceará - UFC}
+
+% \membrodabancaquatro{}
+% \membrodabancaquatrocentro{Centro de Ciências e Tecnologia (CCT)}
+% \membrodabancaquatroies{Universidade do Membro da Banca Quatro (SIGLA)}
+% \membrodabancacinco{}
+% \membrodabancacincocentro{Teste}
+% \membrodabancacincoies{Universidade do Membro da Banca Cinco (SIGLA)}
+% \membrodabancaseis{}
+% \membrodabancaseiscentro{}
+% \membrodabancaseisies{Universidade do Membro da Banca Seis (SIGLA)}
+
+\begin{document}	
 
 	% Elementos pré-textuais
 	\imprimircapa
@@ -190,29 +196,31 @@
 	%\imprimirlistadequadros
 	%\imprimirlistadealgoritmos
 	%\imprimirlistadecodigosfonte
-	\imprimirlistadeabreviaturasesiglas
-	\imprimirlistadesimbolos{elementos-pre-textuais/lista-de-simbolos}
+ 	\imprimirlistadeabreviaturasesiglas
+	\imprimirlistadesimbolos{elementos-pre-textuais/lista-de-simbolos}   
 	\imprimirsumario
-
+	
 	%Elementos textuais
 	\textual
 	\input{elementos-textuais/introducao}
-	\input{elementos-textuais/fundamentacao-teorica}
-	\input{elementos-textuais/metodologia}
+	\input{elementos-textuais/revisao-bibliografica}
+	\input{elementos-textuais/procedimentos-metodologicos}
 	\input{elementos-textuais/resultados}
 	\input{elementos-textuais/conclusao}
-
-	%Elementos pós-textuais
+	
+	%Elementos pós-textuais	
 	\bibliography{elementos-pos-textuais/referencias}
 	\imprimirglossario
 	\imprimirapendices
 		% Adicione aqui os apendices do seu trabalho
-		\input{elementos-pos-textuais/apendices/historico-de-mudancas}
-		\input{elementos-pos-textuais/apendices/lorem-ipsum}
+ 		\input{elementos-pos-textuais/apendices/personas}
+		\input{elementos-pos-textuais/apendices/requisitos}
+		\input{elementos-pos-textuais/apendices/arquitetura}
+		\input{elementos-pos-textuais/apendices/questionario-inicial}
+		\input{elementos-pos-textuais/apendices/questionario-final}
 	\imprimiranexos
 		% Adicione aqui os anexos do seu trabalho
 		\input{elementos-pos-textuais/anexos/exemplo-de-anexo}
-		\input{elementos-pos-textuais/anexos/dinamica-das-classes-sociais}
 	\imprimirindice
 
 \end{document}
