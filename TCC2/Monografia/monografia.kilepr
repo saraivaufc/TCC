@@ -172,10 +172,10 @@ Mode=LaTeX
 
 [item:documento.tex]
 archive=true
-column=1
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=208
+line=222
 mode=LaTeX
 open=true
 order=0
@@ -252,12 +252,12 @@ order=3
 
 [item:elementos-pos-textuais/referencias.bib]
 archive=true
-column=29
+column=10
 encoding=UTF-8
 highlight=BibTeX
-line=10
+line=480
 mode=BibTeX
-open=false
+open=true
 order=2
 
 [item:elementos-pre-textuais/abstract.tex]
@@ -362,10 +362,10 @@ order=-1
 
 [item:elementos-textuais/introducao.tex]
 archive=true
-column=54
+column=68
 encoding=UTF-8
 highlight=LaTeX
-line=22
+line=8
 mode=LaTeX
 open=true
 order=1
@@ -451,8 +451,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:documento.tex]
-CursorColumn=1
-CursorLine=208
+CursorColumn=0
+CursorLine=222
 JumpList=
 ViMarks=.,208,0,[,208,0,],208,0
 
@@ -487,8 +487,8 @@ JumpList=
 ViMarks=.,3,54,[,3,54,],3,54
 
 [view-settings,view=0,item:elementos-pos-textuais/referencias.bib]
-CursorColumn=29
-CursorLine=10
+CursorColumn=10
+CursorLine=480
 JumpList=
 ViMarks=.,10,27,[,10,27,],10,27
 
@@ -541,10 +541,10 @@ JumpList=
 ViMarks=.,0,9,[,0,9,],0,38
 
 [view-settings,view=0,item:elementos-textuais/introducao.tex]
-CursorColumn=54
-CursorLine=22
+CursorColumn=68
+CursorLine=8
 JumpList=
-ViMarks=.,38,136,[,38,136,],38,136
+ViMarks=.,39,5,[,39,5,],39,5
 
 [view-settings,view=0,item:elementos-textuais/procedimentos-metodologicos.tex]
 CursorColumn=0

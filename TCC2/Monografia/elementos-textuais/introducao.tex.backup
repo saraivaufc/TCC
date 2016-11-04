@@ -10,8 +10,8 @@ tradicional, que já se mostrou ineficiente \cite{silva2009ambiente}.
 
 Grande parte dos alunos, em todas as faixas etárias, tem dificuldades em aprender matemática, e muitas vezes essas dificuldades ocorrem 
 não pela falta de atenção ou por não gostar do conteúdo, mas por fatores mentais, psicológicos e pedag\'ogicos que envolvem uma série de 
-trabalhos e conceitos que 
-precisam ser desenvolvidos \cite{de2006dificuldades}. Mas como auxiliar alunos com dificuldades na aprendizagem da matemática? Em busca 
+trabalhos e conceitos que precisam ser desenvolvidos \cite{de2006dificuldades}. Mas como auxiliar alunos com dificuldades na aprendizagem da 
+matemática? Em busca 
 dessa resposta, diferentes sistemas de \textit{software} foram desenvolvidos buscando servir \`a  educação Matem\'atica. Em 2006, Salman 
 Khan fundou a Khan Academy, uma organização educacional que tem por objetivo oferecer exercícios, vídeos de instrução e um painel de 
 aprendizado personalizado que habilita os estudantes a aprender no seu próprio ritmo dentro e fora da sala de aula \cite{khan2012one}. A 
@@ -37,7 +37,8 @@ dos alunos brasileiros ainda estão abaixo do nível 2 (os níveis são de 1 a 6
 Programa Internacional de Avaliação de Estudantes (Pisa) é uma iniciativa de avaliação comparada, aplicada a estudantes na faixa dos 15 
 anos, idade em que se pressupõe o término da escolaridade básica obrigatória na maioria dos países e que visa melhorar as políticas e 
 resultados educacionais.}, ficando na frente apenas de países como Jordânia, Catar, Colômbia, Peru e Indonésia na \'ultima posi\c{c}\~ao. 
-Sendo que somente 0,8\% dos estudantes brasileiros alcançaram os últimos patamares.
+Sendo 
+que somente 0,8\% dos estudantes brasileiros alcançaram os últimos patamares.
 
 \section{Objetivos do Trabalho}
 
