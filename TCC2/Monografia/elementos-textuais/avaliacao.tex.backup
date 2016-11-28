@@ -1,0 +1,41 @@
+\chapter{AVALIA\c{C}\~AO DO AMBIENTE VIRTUAL DE APRENDIZAGEM}
+\label{chap:avaliacao-ambiente-virtual-aprendizagem}
+A interface permite o contato dos usu\'arios com o sistema, a qualidade dessa interface est\'a intimamente ligada com o grau de 
+satisfa\c{c}\~ao que os usu\'ario venham a ter sobre o sistema. Projetar sistemas adequados ao uso e agrad\'aveis de se utilizar
+melhorar\'a a efici\^encia de uso do usu\'ario e agregará mais qualidade ao produto final \cite{antonino2015avaliacao}. 
+
+\citeonline{antonino2015avaliacao} acredita que a utiliza\c{c}\~ao de interfaces que dificultam a execu\c{c}\~ao de tarefas 
+pode ser frustrante para o usu\'ario e pode fazer com que ele busque outras op\c{c}\~oes de softwares ou at\'e mesmo crie uma 
+rejei\c{c}\~ao ao sistema. 
+
+A qualidade da interface \'e verificada atrav\'es da avalia\c{c}\~ao da usabilidade. Essa técnica utiliza m\'etodos, t\'ecnicas e 
+ferramentas, para checar a conformidade de um sistema com os crit\'erios de usabilidade para encontrar problemas de intera\c{c}\~ao e 
+corrigi-los \cite{antonino2015avaliacao}. 
+
+\citeonline{nielsen1993usability} divide os critérios básicos de usabilidade em cinco:
+
+\begin{alineascomponto}
+	\item Facilidade de aprendizado: O sistema precisa ser fácil de aprender para que o usuário possa explorar de forma agradável as 
+funcionalidades do sistema;
+	\item Eficiência: O sistema deve ser o mais produtivo possível, possibilitando a execução de tarefas de forma ágil, e sem muito esforço;
+	\item Memorização: Mesmo depois de um longo período sem utilizar o sistema, ao retornar, o usuário deve sentir facilidade de uso, sem 
+precisar reaprender a usá-lo novamente;
+	\item Erros: O sistema precisa ter a menor taxa de erros possível, e caso ocorram é preciso apresentar maneiras simples e rápidas de 
+recuperá-los;
+	\item Satisfação: A satisfação do usuário determinará o sucesso ou não do sistema. Por isso, quanto mais agradável e prazerosa for à 
+experiência dele com o sistema, melhor será o êxito do produto de software.
+\end{alineascomponto}
+
+Problemas relacionados a esses crit\'erios de usabilidade, podem dificultar a intera\c{c}\~ao do usu\'ario com o sistema e diminuir a 
+qualidade em seu uso. Pensando nisso, realizamos testes de usabilidade no sistema. 
+
+\section{Escopo da Avalia\c{c}\~ao}
+adads
+\section{Prepara\c{c}\~ao}
+asda
+\section{Métricas da Avaliação}
+asd
+\section{Entrevista}
+asda
+\section{An\'alise dos Resultados}
+asda

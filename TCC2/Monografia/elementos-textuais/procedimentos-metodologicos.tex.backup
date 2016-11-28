@@ -237,6 +237,7 @@ isolada, sem interações com outras classes.
 classe PedidoDao, por exemplo, em que seu teste vai até o banco de dados, é um teste de integração. Afinal, você está testando a integração 
 do seu sistema com o sistema externo, que é o banco de dados. Testes que garantem que suas classes comunicam-se bem 
 com serviços web, escrevem arquivos texto, ou mesmo mandam mensagens via \textit{socket} são considerados testes de integração.
+
 	\item Teste de Sistema -- \'e aquele que garante que o sistema funciona como um todo. Este 
 nível de teste está interessado se o sistema funciona como um todo, com todas as 
 unidades trabalhando juntas. Ele é comumente chamado de teste de caixa preta, já 
@@ -245,9 +246,22 @@ que durante o teste n\~ao se importa com a forma que os dados s\~ao processados,
 
 \section{Definição dos Conteúdo para o Sistema}
 
-Após o sistema estar verificado e validado, ele terá que possuir conteúdos para ser utilizado por usu\'ario durante os testes com 
-usu\'arios. . Decidimos optar por deixar os monitores\footnote{É o aluno de graduação concursado para exercer, 
-juntamente com o professor, atividades técnico-didáticas condizentes com o seu grau de conhecimento junto à determinada disciplina, já por 
-ele cursada.} das turmas desenvolverem os conteúdos que ser\~ao utilizados no sistema durante essa fase. 
+Após o sistema estar verificado e validado, ele terá que possuir conteúdos para ser utilizado pelo usuário final durante a fase de aplicação. A aplicação da primeira versão do sistema está planejada 
+para ocorrer em duas turmas de matemática da Universidade Federal do Ceará - Campus Quixadá. Decidimos optar por deixar os monitores\footnote{É o aluno de graduação concursado para exercer, 
+juntamente 
+com o professor, atividades técnico-didáticas condizentes com o seu grau de conhecimento junto à determinada disciplina, já por ele cursada.} das turmas desenvolverem os conteúdos que ser\~ao 
+utilizados no sistema durante essa fase. 
 
-Os monitores passaram por um treinamento, no qual aprenderam a utilizar o sistema para adicionarem os conteúdos.
+Os monitores passar\~ao por um treinamento, no qual aprender\~ao a utilizar o sistema para adicionar conteúdos.
+
+\section{Aplicação da Solução na Universidade Federal do Ceará - Campus Quixadá}
+
+Aplicaremos o ambiente desenvolvido em duas turmas de Matemática Básica da UFC - Campus Quixadá. Nessas turmas, que prevemos terem aproximadamente trinta estudantes cada, dividiremos os estudantes de 
+cada turma em dois grupos: Grupo A1 e Grupo B1 para a primeira turma e Grupo A2 e B2 para a segunda turma. Os Grupos A1 e A2, ser\~ao formados pela metade 
+dos estudantes, escolhidos aleatoriamente, e os Grupos B1 e B2 pelos estudantes restantes. 
+Esta divisão, deve-se ao fato de que ao final da experiência de utilização do ambiente pelos estudantes, realizaremos uma comparação no desempenho entre estudantes que utilizaram o sistema com os que 
+não utilizaram. Dessa forma, o sistema será utilizado pelos estudantes dos Grupos A1 e A2, enquanto que os Grupos B1 e B2 (grupos de controle) continuar\~ao estudando da forma comum. 
+
+O objetivo dessa experiência \'e analisar o impacto que o uso do ambiente desenvolvido tem na aprendizagem dos estudantes. Os dados que iremos utilizar para atingirmos os objetivos com essa 
+experiência ser\~ao providos de duas avalia\c{c}\~oes realizadas por todos os alunos das duas turmas antes e depois da utiliza\c{c}\~ao do ambiente pelos Grupos A1 e A2.
+

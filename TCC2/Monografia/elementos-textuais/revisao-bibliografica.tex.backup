@@ -65,22 +65,42 @@ passos, o aluno poderá utilizar algum procedimento padronizado para a resoluç�
 
 \citeonline{soares2001metodologia} acreditam que a utilização da resolução de problemas na pr\'atica educativa da matemática \'e
 uma metodologia que deve merecer atenção por parte de todos professores. Pois \'e a partir deles que se pode envolver o aluno em situações 
-da vida real, motivando-o para o desenvolvimento do modo de pensar matemático. Segundo eles, 
+da vida real, motivando-o para o desenvolvimento do modo de pensar matemático. Segundo eles, a resolução de um problema 
+``exige uma certa dose de iniciativa e criatividade aliada ao conhecimento de algumas estratégias''. Um bom problema deve ser 
+desafiador, mas possível de ser resolvido, real, interessante e que propicie várias estratégias de solução. Portanto, como se pode 
+perceber, o número de variáveis envolvidas na resolução de problemas é grande, já que o ato de resolver não se relaciona apenas 
+com o conhecimento em si. Outros fatores como a intuição, a criatividade, a perspicácia, a ansiedade, as frustrações etc, também interferem 
+na atividade de resolver problemas, contribuindo para diferenciar as pessoas umas das outras \cite{mirian2001resolucao}. 
 
 \subsection{Modelagem Matemática}
 
-De acordo com \citeonline[p.~16]{bassanezi2002ensino}, “[...] a modelagem consiste na arte de transformar situações da realidade em problemas matemáticos cujas soluções devem ser interpretadas na linguagem do mundo real”. Nas metodologias anteriores, o processo de ensino é deflagrado pelo professor. Na Modelagem Matemática, o processo é compartilhado com o grupo de alunos, pois sua motivação advém
-do interesse pelo assunto. 
+De acordo com \citeonline[p.~16]{bassanezi2002ensino}, ``[...] a modelagem consiste na arte de transformar situações da realidade em 
+problemas matemáticos cujas soluções devem ser interpretadas na linguagem do mundo real''. \citeonline{biembengut1990modelaccao} acredita 
+que a Modelagem está ligada \`a noção de trabalho de projeto. Segundo o autor, trata-se em dividir os alunos em grupos, os quais devem 
+eleger temas de interesse para serem investigados por meio da matemática, contando com o acompanhamento do professor. Nas metodologias 
+anteriores, o processo de ensino é deflagrado pelo professor. Na Modelagem Matemática, o processo é compartilhado com o grupo de 
+alunos, pois sua motivação advém do interesse pelo assunto.
 
-A modelagem matemática é uma metodologia que busca proporcionar ao aluno uma visão prática do conhecimento teórico aprendido na sala de aula, através de problemas de ordem prática ou de natureza empírica \cite{fossa1998tendencias}. 
+A Modelagem Matemática é uma metodologia que busca proporcionar ao aluno uma visão prática do conhecimento teórico aprendido na 
+sala de aula, através de problemas de ordem prática ou de natureza empírica \cite{fossa1998tendencias}. \citeonline{barbosa2001modelagem} 
+destaca alguns aspectos importantes a cerca dessa metodologia:
 
-\citeonline{burak2004modelagem} destaca alguns aspectos importantes a cerca dos benefícios da utilização da modelagem matemática:
+\begin{itemize}
+	\item Maior interesse do(s) grupo(s) - O fato de o grupo compartilhar o processo de ensino, isto é, escolher aquilo que gostaria 
+ de estudar, ter a oportunidade de se manifestar, de discutir e propor, desenvolve o interesse de cada grupo e dos grupos.
+	\item Interação maior no processo de ensino e de aprendizagem - Para a aprendizagem, o procedimento gerado a partir do interesse do 
+grupo ou dos grupos, parece resultar em ganho, pois o grupo ou os grupos de alunos trabalham com aquilo que gostam, aquilo que para 
+eles apresenta significado, por isso tornam-se corresponsáveis pela aprendizagem.
+	\item Demonstração de uma forma diferenciada de conceber a educação e, em consequência, a adoção de uma nova postura do professor. 
+\end{itemize}
 
-\begin{alineascomponto}
-	\item Maior interesse do grupo, pois o fato do grupo escolher aquilo que gostaria de estudar, ter a oportunidade de se manifestar, de discutir e propor, desenvolve o interesse do grupo.
-    \item Interação maior no processo de ensino e de aprendizagem, pois o grupo de alunos trabalha com aquilo que gostam e que apresenta significado, tornando-os co-responsáveis pela aprendizagem. 
-\end{alineascomponto}
-
+Na medida em que alunos e professores ``escolhem'' um tema gerador e o professor prop\~oe um determinado estudo, se poss\'ivel 
+com um apelo social, os alunos buscam levantar informa\c{c}\~oes, organiz\'a-las, elaborar estratégias de a\c{c}\~ao, estimar e 
+verificar resultados obtidos, entre outras a\c{c}\~oes. Mesmo que o problema inicial tenha uma origem n\~ao matem\'atica, o aluno v\^e 
+obrigado a utilizar a l\'ogica, fazer uso de ideias, conceitos do campo matem\'atico para obter uma solu\c{c}\~ao para o assunto pesquisado 
+\cite{silva2007modelagem}. \'E importante ressaltar que \'e muito difícil executar essa metodologia na pr\'atica, pois exige uma maior 
+capacidade do aluno de solucionar problemas, trabalhar em grupo, saber pesquisar, ser pontual na entrega das tarefas, ser criativo, 
+cumprir as metas, entre outros motivos.
 
 \subsection{O Uso de Computadores}
 
@@ -121,15 +141,32 @@ Geralmente, os AVAs possuem algumas características que os distinguem de outros
     \item aparência consistente e personalizável - uma interface padrão de fácil utilização, permitindo personalização, mas com um modo de utilização básico.
 \end{alineascomponto}
 
-A utilização de AVAs traz diversas vantagens como cita \citeonline[p.153]{tajra2001ferramentas}: acessibilidade a fontes inesgotáveis de assuntos para pesquisas, páginas educacionais específicas para a pesquisa escolar, comunicação e interação com outras escolas, estímulo para pesquisas a partir de temas previamente definidos ou a partir da curiosidade dos próprios alunos, estímulo ao raciocínio lógico, troca de experiências entre professores/professores, aluno/aluno e professor/aluno, dentre outras.
-
-\citeonline{carvalho2013ambiente} afirma que AVAs integram funcionalidades de comunicação e partilha de informações e isso permite aceder à aprendizagem de uma forma flexível; em qualquer espaço(\textit{anywhere}) e em qualquer hora (\textit{anytime}). O autor complementa que:
+\citeonline{carvalho2013ambiente} afirma que AVAs integram funcionalidades de comunicação e partilha de informações e isso 
+permite aceder à aprendizagem de uma forma flexível; em qualquer espaço(\textit{anywhere}) e em qualquer hora (\textit{anytime}). 
+O autor complementa que:
 
 \begin{citacao}
-``Um AVA deve, por um lado, enfatizar a aprendizagem através da integração de ferramentas interativas e comunicativas, da partilha de conteúdos multimédia, do alojamento de trabalhos e projetos, da integração de ferramentas de aprendizagem colaborativa, e por outro, deve proporcionar estratégias que potenciem a participação ativa e significativa dos alunos, abranger possibilidades didáticas de aprendizagem individual e em grupo, criar novos acessos a websites como forma de enriquecer o conhecimento, possuir ferramentas de controlo de acesso e registro de utilizadores e de gestão de grupos de trabalho'' \cite[p.~41]{carvalho2013ambiente}. 
+``Um AVA deve, por um lado, enfatizar a aprendizagem através da integração de ferramentas interativas e comunicativas, da 
+partilha de conteúdos multimédia, do alojamento de trabalhos e projetos, da integração de ferramentas de aprendizagem colaborativa, 
+e por outro, deve proporcionar estratégias que potenciem a participação ativa e significativa dos alunos, abranger possibilidades 
+didáticas de aprendizagem individual e em grupo, criar novos acessos a websites como forma de enriquecer o conhecimento, possuir 
+ferramentas de controlo de acesso e registro de utilizadores e de gestão de grupos de trabalho'' \cite[p.~41]{carvalho2013ambiente}. 
 \end{citacao}
 
-Os AVAs  geralmente utilizam diversas ferramentas para apoio ao ensino, como já foi citado anteriormente, tais como fóruns, chats, wikis, glossários, portfólios, enquetes, questionários, entre outros. Essas ferramentas, de acordo com \citeonline{masetto2012competencia}, são recursos em linguagem digital e podem colaborar significativamente para tornar a educação mais eficiente e eficaz.
+Muito se discute sobre as vantagens e desvantagens da utiliza\c{c}\~ao de AVAs na Educa\c{c}\~ao a Dist\^ancia (EAD). Entre as vantagens, 
+destacam-se a acessibilidade a fontes inesgotáveis de assuntos para pesquisas, páginas educacionais específicas para a pesquisa escolar, 
+comunicação e interação com outras escolas, estímulo para pesquisas a partir de temas previamente definidos ou a partir da curiosidade dos 
+próprios alunos, estímulo ao raciocínio lógico, troca de experiências entre professores/professores, aluno/aluno e professor/aluno, dentre 
+outras \citeonline{tajra2001ferramentas}. Entre as desvantagens, citam-se a incapacidade dos estudantes de auto-agendar e regular o 
+desempenho. Estudantes que carecem de motivação e auto-disciplina tipicamente lutam mais em um AVA do que em uma sala de aula 
+tradicional. Não há professores e colegas em posição de oferecer lembretes regulares sobre tarefas, projetos e testes. A interação limitada 
+do tutor e o isolamento de um grupo de aprendizagem são também desvantagens. Os tutores normalmente tentam se comunicar através de e-mail 
+ou pelas ferramentas do AVA. No entanto, é mais difícil garantir uma escuta adequada e compreensão a distância. Além disso, leva mais tempo 
+para interação e feedback através de ferramentas virtuais do que face-a-face. O isolamento social pode ser desafiador 
+para os alunos que desenvolvem a interação diária com os colegas e o conforto informal que vem com um ambiente de sala de aula tradicional.
+
+
+
 
 \section{Gamificação}
 
@@ -155,7 +192,18 @@ Para \citeonline{halliwell2013gamification}, o objetivo da Gamificação não é
 sejam, e usá-los para criar um ambiente que mova as pessoas um pouco mais em direção a um objetivo que tenham criado. Um exemplo bem interessante do uso de gamificação é o Duolingo\footnote{O 
 Duolingo é uma plataforma para ensino de idiomas gratuito, dispon\'ivel em \url{www.duolingo.com} } \cite{von2013duolingo}, uma plataforma online de aprendizagem em línguas que trabalha com o 
 conceito de conhecimento coletivo e voluntário. No Duolingo, usuários podem ganhar pontos com as respostas corretas e lições completadas, assim como perder pontos a cada resposta incorreta. O mesmo 
-ainda atribui status de reconhecimento de acordo o conhecimento obtido durante o jogo. Veja mais na \autoref{trabalho_relacionados_duolingo}.
+ainda atribui status de reconhecimento de acordo o conhecimento obtido durante o jogo. Veja mais na 
+\autoref{trabalho_relacionados_duolingo}.
+
+A Gamificação ainda \'e muito nova e possui potencialidades de aplica\c{c}\~ao em diversas áreas, pois a linguagem e metodologia dos 
+\textit{games} s\~ao bastante populares, eficazes na resolução de problemas e aceitas naturalmente pelas atuais gera\c{c}\~oes que 
+cresceram interagindo com esse tipo de entretenimento. Dessa forma, a gamificação se justifica a partir de uma perspectiva sociocultural 
+\cite{fardo2013gamificaccao}. Por ser um fen\^omeno emergente, existem poucos relatos de sua utiliza\c{c}\~ao em processos educacionais, 
+devido ao fato de que os educadores precisam dominar bem essa linguagem para serem capacitados para aplicar em seus projetos 
+\cite{fardo2013gamificaccao}. Por isso, aplic\'a-la na educa\c{c}\~ao pode impactar de forma inesperada os processos de ensino e 
+aprendizagem. Al\'em de haver um risco de ser empregada de forma incorreta e equivocada, refo\c{c}ando  
+
+Pelo o que expomos at\'e agora, 
 
 \input{elementos-textuais/trabalhos-relacionados}
 
