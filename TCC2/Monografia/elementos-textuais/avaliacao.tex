@@ -27,7 +27,7 @@ experiência dele com o sistema, melhor será o êxito do produto de software.
 \end{alineascomponto}
 
 Problemas relacionados a esses crit\'erios de usabilidade, podem dificultar a intera\c{c}\~ao do usu\'ario com o sistema e diminuir a 
-qualidade em seu uso. Pensando nisso, realizamos uma avalia\c{c}\~ao de usabilidade no sistema. Assim como n\'os, \citeonline{lima2006ambientecolaborativo} acredita que a avalia\c{c}\~ao de usabilidade tem como objetivos gerais:
+qualidade em seu uso. Pensando nisso, realizamos uma avalia\c{c}\~ao de usabilidade no sistema. \citeonline{lima2006ambientecolaborativo} acredita que a avalia\c{c}\~ao de usabilidade tem como objetivos gerais:
 
 \begin{alineascomponto}
 	\item Validar a eficácia da interação humano-computador face a efetiva realização das tarefas por parte dos usuários;
@@ -66,15 +66,88 @@ Durante o planejamento, definimos todos os elementos do plano do teste de usabil
 
 Inicialmente, definimos as tarefas que deveriam ser executadas pelo usuário durante o uso do sistemas. 
 
-\subsection{Méticas da Avaliação}
+\subsection{Métricas da Avaliação}
 
 O principal foco dessa avaliação é a usabilidade, por isso, avaliamos alguns fatores
-como a facilidade de aprendizado, eficiência no uso, satisfação do usuário, segurança no uso e facilidade de memorização. A a tabela a seguir, apresentamos as metricas que foram consideradas durante a avaliação:
+como a facilidade de aprendizado, eficiência no uso, satisfação do usuário, segurança no uso e facilidade de memorização. Na \autoref{tab:metricas_avaliacao}, apresentamos as métricas que foram consideradas durante a avaliação:
+
+\begin{table}[H]
+	\Caption{\label{tab:metricas_avaliacao} Métricas para a avaliação}%
+	\IBGEtab{}{%
+
+\resizebox{\textwidth}{!}{
+
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{c|}{\textbf{Fator}} & \multicolumn{1}{c|}{\textbf{Método de Medição}} & \multicolumn{1}{c|}{\textbf{Pior caso}} & \multicolumn{1}{c|}{\textbf{Nível Almejado}} & \multicolumn{1}{c|}{\textbf{Melhor caso}} \\ \hline
+01 & Segurança no uso & \begin{tabular}[c]{@{}l@{}}Número de erros cometidos\\ para cada tarefa\end{tabular} & Por volta de 6 erros & No máximo 3 erros & Nenhum erro \\ \hline
+02 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Número de cliques para \\ realizar uma tarefa\end{tabular} & Por volta de 6 cliques & No máximo 3 cliques & \multicolumn{1}{c|}{--} \\ \hline
+03 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Tempo gasto para \\ encontrar a tela de autenticação\end{tabular} & Por volta de 1 minutos & No máximo 5 segundos & 2 segundos \\ \hline
+04 & Eficiência no uso & Tempo gasto para realizaro cadastro no sistema & Por volta de 5 minutos & No máximo 1 minuto & 20 segundos \\ \hline
+05 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Tempo gasto para encontrar \\ uma lição\end{tabular} & Por volta de 4 minutos & No máximo 10 segundos & 5 segundos \\ \hline
+06 & Facilidade de aprendizado & Se entende corretamente as informações da interface & Por volta de 3 perguntas & Sem perguntas & Sem perguntas \\ \hline
+07 & Satisfação do usuário & \begin{tabular}[c]{@{}l@{}}Observação durante a \\ realização das atividades\end{tabular} & Demonstrou tédio ou frustração & Demonstrou prazer ou diversão & \begin{tabular}[c]{@{}l@{}}Demonstrou prazer\\ ou diversão\end{tabular} \\ \hline
+08 & Facilidade de memorização & \begin{tabular}[c]{@{}l@{}}Realização de uma \\ tarefa pela segunda vez\end{tabular} & \begin{tabular}[c]{@{}l@{}}Não conseguiu chegar no\\ objetivo ou usou outro \\ caminho para chegar\end{tabular} & \begin{tabular}[c]{@{}l@{}}Usou o mesmo \\ caminho da primeira vez\end{tabular} & \begin{tabular}[c]{@{}l@{}}Usou o mesmo \\ caminho da primeira vez\end{tabular} \\ \hline
+\end{tabular}
+
+}
+
+	}{%
+	\Fonte{Do Próprio Autor}%
+	%\Nota{esta é uma nota, que diz que os dados são baseados na
+	%	regressão linear.}%
+	%\Nota[Anotações]{uma anotação adicional, seguida de várias outras.}%
+}
+\end{table}
 
 
 \subsection{Roteiro da Entrevista}
-asda
+Estevistas são uma das técnicas mais utilizadas de coleta de dados e levantamento de requisitos. Trata-se de uma conversa guiada por roteiro de perguntas ou tópicos, na qual o entrevistador busca obter informação de um entrevistado \cite{seidman1998interview}. Existem trêstipos de entrevistas:
+\begin{itemize}
+	\item \textbf{Estruturadas}: o entrevistador se mantém fiel a um roteiro, fazendo perguntas previamente definidas na ordem especificada. Ele não tem muita liberdade para explorar tópicos novos que surjam durante a entrevista.
+	\item \textbf{Não estruturada}:  o entrevistador realiza pergunta de modo flexível, usando perguntas abertas e aprofundando mais em alguns tópicos. O comprometimento do entrevistador é com o tópico abordado.
+	\item \textbf{Entrevista semiestruturada}: o roteiro é composto de tópicos ou perguntas (geralmente abertas) que devem ser endereçados na entrevista, em uma ordem lógica. O entrevistador tem liberdade para explorar as respostas e até mesmo modificar a ordem dos tópicos, mas deve manter o foco nos objetivos da entrevista. 
+\end{itemize}
 
+Para a avaliação, optamos por utilizar uma Estrevista Semiestruturada,  por possibilitar uma maior flexibilidade e também uma maior exploração do assunto estudado. Na \autoref{tab:roteiro_entrevista}, apresentamos o roteiro que nos guiou durante as estrevistas.
+
+
+\begin{table}[H]
+	\Caption{\label{tab:roteiro_entrevista} Roteiro para a entrevista}%
+	\IBGEtab{}{%
+
+\resizebox{\textwidth}{!}{
+
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Finalidade}} & \multicolumn{1}{c|}{\textbf{Pergunta}} \\ \hline
+\multirow{2}{*}{Caracterização} & Você utiliza regularmente computador? \\ \cline{2-2} 
+ & Você já usou algum outro sistema parecido com este? \\ \hline
+\multirow{3}{*}{Funcionalidade} & Você acha que o sistema faz o que ele se propõe a fazer? \\ \cline{2-2} 
+ & O que você acha das funções do sistema? \\ \cline{2-2} 
+ & Temalguma função que você adicionaria no sistema? \\ \hline
+\multirow{2}{*}{Confiabilidade} & Em algum momento o sistema apresentou alguma falha? \\ \cline{2-2} 
+ & \begin{tabular}[c]{@{}l@{}}(Caso tenha ocorrido falha). \\ Você acha que o sistema agiu adequadamente na ocorrênciada falha?\end{tabular} \\ \hline
+\multirow{4}{*}{Usabilidade} & O que você achou da execução das funções do sistema? \\ \cline{2-2} 
+ & O que você acha em relação a aprendizagem do uso do sistema? \\ \cline{2-2} 
+ & O que você achou do formato dos formulários do sistema? \\ \cline{2-2} 
+ & O que você acha das respostas que o sistema de dar quando você executa uma ação? \\ \hline
+\multirow{2}{*}{Eficiência} & O que você acha do tempo de resposta do sistema? \\ \cline{2-2} 
+ & É fácil encontrar o que se procura no sistema? \\ \hline
+\multirow{3}{*}{Melhorias} & O que você não gostou no sistema? \\ \cline{2-2} 
+ & O que você gostou no sistema? \\ \cline{2-2} 
+ & Qual sugestão de melhoria você daria para o sistema? \\ \hline
+\end{tabular}
+
+}
+
+	}{%
+	\Fonte{Do Próprio Autor}%
+	%\Nota{esta é uma nota, que diz que os dados são baseados na
+	%	regressão linear.}%
+	%\Nota[Anotações]{uma anotação adicional, seguida de várias outras.}%
+}
+\end{table}
 
 \subsection{Teste Piloto}
 
