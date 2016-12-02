@@ -70,14 +70,12 @@ como a facilidade de aprendizado, eficiência no uso, satisfação do usuário, 
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{c|}{\textbf{Fator}} & \multicolumn{1}{c|}{\textbf{Método de Medição}} & \multicolumn{1}{c|}{\textbf{Pior caso}} & \multicolumn{1}{c|}{\textbf{Nível Almejado}} & \multicolumn{1}{c|}{\textbf{Melhor caso}} \\ \hline
-M1 & Segurança no uso & \begin{tabular}[c]{@{}l@{}}Número de erros cometidos\\ para cada tarefa\end{tabular} & Por volta de 6 erros & No máximo 3 erros & Nenhum erro \\ \hline
-M2 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Número de cliques para \\ realizar uma tarefa\end{tabular} & Por volta de 6 cliques & No máximo 3 cliques & \multicolumn{1}{c|}{--} \\ \hline
-M3 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Tempo gasto para \\ encontrar a tela de autenticação\end{tabular} & Por volta de 1 minutos & No máximo 5 segundos & 2 segundos \\ \hline
-M4 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Tempo gasto para realizar \\ o cadastro no sistema\end{tabular} & Por volta de 5 minutos & No máximo 1 minuto & 20 segundos \\ \hline
-M5 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Tempo gasto para encontrar \\ uma lição\end{tabular} & Por volta de 4 minutos & No máximo 10 segundos & 5 segundos \\ \hline
-M6 & Facilidade de aprendizado & \begin{tabular}[c]{@{}l@{}}Se entende corretamente as \\ informações da interface\end{tabular} & Por volta de 3 perguntas & Sem perguntas & Sem perguntas \\ \hline
-M7 & Satisfação do usuário & \begin{tabular}[c]{@{}l@{}}Observação durante a \\ realização das atividades\end{tabular} & Demonstrou tédio ou frustração & Demonstrou prazer ou diversão & \begin{tabular}[c]{@{}l@{}}Demonstrou prazer\\ ou diversão\end{tabular} \\ \hline
-M8 & Facilidade de memorização & \begin{tabular}[c]{@{}l@{}}Realização de uma \\ tarefa pela segunda vez\end{tabular} & \begin{tabular}[c]{@{}l@{}}Não conseguiu chegar no\\ objetivo ou usou outro \\ caminho para chegar\end{tabular} & \begin{tabular}[c]{@{}l@{}}Usou o mesmo \\ caminho da primeira vez\end{tabular} & \begin{tabular}[c]{@{}l@{}}Usou o mesmo \\ caminho da primeira vez\end{tabular} \\ \hline
+M1 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Tempo gasto para realizar \\ uma tarefa\end{tabular} & \multicolumn{1}{c|}{--} & \multicolumn{1}{c|}{--} & \multicolumn{1}{c|}{--} \\ \hline
+M2 & Segurança no uso & \begin{tabular}[c]{@{}l@{}}Número de erros cometidos\\ para cada tarefa\end{tabular} & Por volta de 2 erros & Nenhum erro & Nenhum erro \\ \hline
+M3 & Eficiência no uso & \begin{tabular}[c]{@{}l@{}}Número de cliques para \\ realizar uma tarefa\end{tabular} & Por volta de 6 cliques & No máximo 3 cliques & \multicolumn{1}{c|}{--} \\ \hline
+M4 & Facilidade de aprendizado & \begin{tabular}[c]{@{}l@{}}Se entende corretamente as \\ informações da interface\end{tabular} & Por volta de 3 perguntas & Sem perguntas & Sem perguntas \\ \hline
+M5 & Satisfação do usuário & \begin{tabular}[c]{@{}l@{}}Realização das atividades\\ (subjetivo)\end{tabular} & Demonstrou tédio ou frustração & Demonstrou prazer ou diversão & \begin{tabular}[c]{@{}l@{}}Demonstrou prazer\\ ou diversão\end{tabular} \\ \hline
+M6 & Satisfação do usuário & \begin{tabular}[c]{@{}l@{}}Avaliação do usuário através\\ da entrevista(subjetivo)\end{tabular} & neutro & positivo & muito positivo \\ \hline
 \end{tabular}
 
 }
@@ -186,9 +184,118 @@ A execução do teste consistiu nas seguintes etapas:
 \begin{enumerate}
 	\item Primeiramente, cada participante foi cumprimentado pelo avaliador e orientado a sentar-se e ficar à vontade. Foi realizado algumas rápidas perguntas curtas para verificar o perfil do participante.
 	\item Em seguinda, o avaliador apresentou o propósito e objetivos da avaliação.   
-	\item Após as devidas explicações, foi iniciada a realização das tarefas, as quais foram descritas oralmente pelo avaliador. Nesta etapa, o avaliador requisitou que o participante verbalizasse suas dúvidas para ajudar o avaliador a coletar essas informações.
+	\item Após as devidas explicações, foi iniciada a realização das tarefas, as quais foram descritas oralmente pelo avaliador. Nesta etapa, o avaliador requisitou que o participante verbalizasse suas dúvidas para ajudar-lo a coletar essas informações.
 	\item Depois de concluídas todas as tarefas, o participante foi submetido a uma entrevista, onde o avaliador veio a tratar, além de alguns questionamentos pré-definidos, fatos ocorridos durante a realização das tarefas.
-	\item Após a entrevista, o entrevistador agradeceu o participante e lhe entregou um brinde como forma de agradecimento.  
+	\item Após a entrevista, o entrevistador agradeceu ao participante e lhe entregou um brinde como forma de agradecimento.  
 \end{enumerate}
 
 \section{An\'alise dos Resultados}
+
+\subsection{Tempo de execução das tarefas}
+Na \autoref{tab:execucao_tarefas} apresentamos as medidas de tempo de execução das seis tarefas realizadas comparando-as com valores previamente estabelecidos: pior caso, nível almeijado e melhor caso.
+
+
+\begin{table}[H]
+	\Caption{\label{tab:execucao_tarefas}  Tempo de Execução das Tarefas em Segundos}%
+	\IBGEtab{}{%
+
+\resizebox{\textwidth-8cm}{!}{
+
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Tarefas/\\ Participantes\end{tabular}}} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \textbf{T6} \\ \hline
+Participante 1 & 103s & 20s & - & 5s & 5s & 47s \\ \hline
+Participante 2 & 126s & 9s & - & 175s & 7s & 34s \\ \hline
+Participante 3 & 78s & 10s & - & 35s & 5s & 55s \\ \hline
+Participante 4 & 48s & 5s & - & 30s & 5s & 40s \\ \hline
+Participante 5 & 90s & 5s & - & 11s & 4s & 35s \\ \hline
+Participante 6 & 85s & 9s & - & 20s & 8s & 25s \\ \hline
+\textbf{Média} & \textbf{88s} & \textbf{9s} & \textbf{-} & \textbf{46s} & \textbf{5s} & \textbf{39s} \\ \hline
+Pior caso & 180 & 30s & - & 100 & 15s & 60s \\ \hline
+Nível almeijado & 60s & 5s & - & 10s & 5s & 30s \\ \hline
+Melhor caso & 20s & 2s & - & 4s & 3s & 15s \\ \hline
+\end{tabular}
+
+}
+
+	}{%
+	\Fonte{Do Próprio Autor}%
+	%\Nota{esta é uma nota, que diz que os dados são baseados na
+	%	regressão linear.}%
+	%\Nota[Anotações]{uma anotação adicional, seguida de várias outras.}%
+}
+\end{table}
+
+\subsection{Número de erros cometidos na execução das tarefas}
+Na \autoref{tab:erros_cometidos_tarefas} apresentamos as medidas de número de erros cometidos durante a execução das seis tarefas, comparando-as com valores previamente estabelecidos: pior caso, nível almeijado e melhor caso. 
+
+\begin{table}[H]
+	\Caption{\label{tab:erros_cometidos_tarefas}  Número de Erros Cometidos}%
+	\IBGEtab{}{%
+
+\resizebox{\textwidth-8cm}{!}{
+
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Tarefas/\\ Participantes\end{tabular}}} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \textbf{T6} \\ \hline
+Participante 1 & 1 & 1 & 0 & 0 & 0 & 0 \\ \hline
+Participante 2 & 1 & 1 & 0 & 4 & 0 & 0 \\ \hline
+Participante 3 & 0 & 0 & 0 & 1 & 0 & 0 \\ \hline
+Participante 4 & 0 & 0 & 0 & 1 & 0 & 0 \\ \hline
+Participante 5 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+Participante 6 & 0 & 0 & 0 & 1 & 0 & 0 \\ \hline
+\textbf{Média} & \textbf{0.16} & \textbf{0.33} & \textbf{0} & \textbf{1.16} & \textbf{0} & \textbf{0} \\ \hline
+Pior caso & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
+Nível almeijado & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+Melhor caso & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+
+}
+	}{%
+	\Fonte{Do Próprio Autor}%
+	%\Nota{esta é uma nota, que diz que os dados são baseados na
+	%	regressão linear.}%
+	%\Nota[Anotações]{uma anotação adicional, seguida de várias outras.}%
+}
+\end{table}
+
+\subsection{Número cliques realizados na execução das tarefas}
+Na \autoref{tab:cliques_realizados_tarefas} apresentamos as medidas de número de cliques durante a execução das seis tarefas realizadas, comparando-as com valores previamente estabelecidos: pior caso, nível almeijado e melhor caso. 
+
+\begin{table}[H]
+	\Caption{\label{tab:cliques_realizados_tarefas}  Número de Cliques Realizados}%
+	\IBGEtab{}{%
+
+\resizebox{\textwidth-8cm}{!}{
+
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Tarefas/\\ Participantes\end{tabular}}} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \textbf{T6} \\ \hline
+Participante 1 & 3 & 4 & 2 & 4 & 3 & 4 \\ \hline
+Participante 2 & 5 & 3 & 2 & 7 & 3 & 4 \\ \hline
+Participante 3 & 3 & 2 & 2 & 4 & 3 & 4 \\ \hline
+Participante 4 & 3 & 2 & 2 & 4 & 3 & 4 \\ \hline
+Participante 5 & 3 & 2 & 2 & 3 & 3 & 4 \\ \hline
+Participante 6 & 3 & 2 & 2 & 4 & 3 & 4 \\ \hline
+\textbf{Média} & \textbf{3.33} & \textbf{0.33} & \textbf{2} & \textbf{4.33} & \textbf{3} & \textbf{4} \\ \hline
+Pior caso & 6 & 6 & 6 & 6 & 6 & 6 \\ \hline
+Nível almeijado & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
+Melhor caso & 3 & 2 & 2 & 3 & 3 & 3 \\ \hline
+\end{tabular}
+
+}
+	}{%
+	\Fonte{Do Próprio Autor}%
+	%\Nota{esta é uma nota, que diz que os dados são baseados na
+	%	regressão linear.}%
+	%\Nota[Anotações]{uma anotação adicional, seguida de várias outras.}%
+}
+\end{table}
+
+\subsection{Número de perguntas realizadas durante a execução das tarefas}
+
+
+\subsection{Satisfação dos participantes na realização das tarefas}
+
+
+\subsection{Resultados da Entrevista}
