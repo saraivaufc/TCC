@@ -165,39 +165,6 @@ ou pelas ferramentas do AVA. No entanto, é mais difícil garantir uma escuta ad
 para interação e feedback através de ferramentas virtuais do que face-a-face. O isolamento social pode ser desafiador 
 para os alunos que desenvolvem a interação diária com os colegas e o conforto informal que vem com um ambiente de sala de aula tradicional.
 
-A seguir, apresentaremos alguns importantes AVAs e uma an\'alise comparativa entre eles.
-
-\subsection{\textit{Moodle}}
-Conforme os autores Ribeiro e Mendonça (2007)??, 
-\begin{citacao}
-``O AVA \textit{Modular Object Oriented Distance Learning} (Moodle) é uma plataforma, \textit{Open Source}, ou seja, pode ser 
-instalado, utilizado, modificado e mesmo distribuído. Seu desenvolvimento objetiva o gerenciamento de aprendizado e de trabalho 
-colaborativo em ambiente virtual, permitindo a criação e administração de cursos \textit{on-line}, grupos de trabalho e comunidades
-de aprendizagem''.
-\end{citacao}
-
-Este AVA segundo Garcia e Lacleta (2004)??, ``apresenta estrutura modular, ampla comunidade de desenvolvedores, grande quantidade de 
-documentação, disponibilidade, escalabilidade, facilidade de uso, interoperabilidade, estabilidade e segurança''.
-
-\subsection{TelEduc}
-O AVA TelEduc, segundo Ribeiro e Mendonça (2007)\footnote{Avaliação dos Ambientes Virtuais de Aprendizagem Moodle, TelEduc e
-Tidia - Ae: um estudo comparativo},
-
-\begin{citacao}
-``É uma plataforma \textit{Open Source}, um ambiente de suporte EAD. O seu desenvolvimento é realizado de acordo com as necessidades, 
-tanto tecnológico como metodológicas, por desenvolvedores do Núcleo de Informática Aplicada à Educação (NIED) da Universidade Estadual de
-Campinas (UNICAMP)''.
-\end{citacao}
-
-Em geral, o ambiente TelEduc é flexível e está dividido em duas partes: as ferramentas e o conteúdo correspondente à ferramenta selecionada.
-
-\subsection{AulaNet}
-O ambiente Aulanet (http://anauel.cead.puc-rio.br/aulanet2/) foi criado em 1997 pelo Laboratório de Engenharia de Software do 
-Departamento de Informática da Pontifícia Universidade Católica do Rio de Janeiro. Sendo este, um ambiente de software
-baseado na web para criar, administrar, manter e dar assistência a cursos a distância.
-
-\subsection{An\'alise Comparativa}
-
 \section{Gamificação}
 
 Ao longo da história, buscamos metodologias inovadoras para auxiliar a educação. Uma das metodologias que mais diferem do tradicional método de ensino é a utilização de jogos para o ensino e aprendizagem. 
@@ -239,6 +206,29 @@ apenas as mecânicas mais básicas dos games e com isso construirmos somente um 
 
 \section{Considerações finais do cap\'itulo}
 
-O sistema que desenvolveremos faz uso da metodologia de resolução de problemas, possibilitando o aluno adquirir novos conhecimentos além daqueles estudados no momento. Por se tratar de um AVA, 
-o mesmo possibilitará ao aluno uma maior interação com o professor e outros alunos, além da possibilidade de uma aprendizagem auto-ritmada. A aplicação da Gamificação no sistema, servir\'a para 
-desenvolver  engajamento, participação, e comprometimento entre os usuários do sistema. 
+A plataforma que desenvolveremos faz uso da metodologia de resolução de problemas, possibilitando o aluno adquirir novos conhecimentos além daqueles estudados no momento. Por se tratar de um AVA, 
+o mesmo possibilitará ao aluno uma maior interação com o professor e outros alunos, além da possibilidade de uma aprendizagem auto-ritmada. A aplicação da Gamificação no sistema, servir\'a para desenvolver  engajamento, participação, e comprometimento entre os usuários do sistema. 
+
+Uma caracteristica importante em nossa plataforma, que a diferencia das demais citadas até momento, é a forma com ela lidará com as deficiências de aprendizado que os alunos enfretam ao longo de seus estudos. É possível, a partir de um item respondido incorretamente de um problema, identificar a deficiência do estudante. Por isso, é fundamental que no momento que o assistente estiver adicionando os itens do problema, ele possa escolher, para cada item incorreto, uma ou várias li\c{c}\~oes, indicando-lhes como supostas defici\^encias do estudante caso ele marque determinados itens. Na \autoref{fig:estrutura_problema}, ilustramos a estrutura dos problemas que são utilizados no ambiente. No problema, apenas o primeiro item é correto, os demais são incorretos. Os incorretos podem, ou não, indicar as deficiências que o aluno possua caso este conclua sua resposta marcando este determinado item. A medida que os erros do aluno forem se acumulando, pode ocorrer que os itens marcados incorretamente em suas respostas, indiquem deficiências que este aluno venha a ter.
+
+\begin{figure}[H]
+    \centering
+    \Caption{\label{fig:estrutura_problema} Estrutura do Problema}	
+    \UFCfig{}{
+	\fbox{\includegraphics[width=8cm]{figuras/figura_estrutura_problema.png}}
+    }{
+      \Fonte{Do próprio autor.}
+    }	
+\end{figure}
+
+Na \autoref{fig:ilustracao_aprendizagem}, ilustramos o nosso modelo de aprendizagem. Nesse modelo, cada conteúdo é fragmentado em lições, e durante o aprendizado dessas lições, pode ocorrer de alguns alunos ficarem para trás (Cena 1). Destes que ficaram para tráz, alguns podem vir a enfrentar obstáculos e não consiguam avançar para as próximas lições (Cena 2). Ao identificar isso, o sistema poderá identificar as lições que estes alunos possuem deficiência e lhe sugira voltar para refazer essas lições antes de continuar (Cena 3). Após o aluno refazer a  provável lição em que possui deficiência (Cena 4), este já estará hábito a superar o obstáculo e continuar com seu aprendizado (Cenas 5 e 6).
+
+\begin{figure}[H]
+    \centering
+    \Caption{\label{fig:ilustracao_aprendizagem} Problema}	
+    \UFCfig{}{
+	\fbox{\includegraphics[width=\textwidth]{figuras/proposta.png}}
+    }{
+      \Fonte{Do próprio autor.}
+    }	
+\end{figure}
