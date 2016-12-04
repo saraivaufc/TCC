@@ -70,8 +70,7 @@ O Levantamento e An\'alise de Requisitos é a fase do desenvolvimento de um \tex
 quais as necessidades, condições e princípios que o \textit{software} deverá atender \cite{matuda2013mapas}. Essa fase possibilitou 
 conhecer e estudar as necessidades do cliente, assim como as restrições que o software estará sujeito.
 
-Para realizar a coleta dos requisitos, optamos por utilizar entrevistas com o cliente, que no caso foi um dos professores de matemática da 
-Universidade Federal do Cear\'a (UFC). Nessas entrevistas, que se caracterizaram como semi-estruturadas \footnote{Pois foram guiadas por um 
+Para realizar a coleta dos requisitos, optamos por utilizar entrevistas com o cliente, que no caso foi um dos professores de matemática da \gls{ufc}. Nessas entrevistas, que se caracterizaram como semi-estruturadas \footnote{Pois foram guiadas por um 
 roteiro previamente elaborado e composto por questões abertas \cite{belei2008uso}}, foi possível obter os requisitos do sistema, assim como 
 o público-alvo a quem o sistema atenderá. Essa técnica foi utilizada porque permitia uma organização flexível e ampliação dos 
 questionamentos à medida que as informações foram sendo fornecidas pelo cliente \cite{fujisawa2000utilizaccao}.
@@ -126,9 +125,8 @@ confiabilidade.
     \item Requisitos de Domínio -- são os requisitos do domínio da aplicação do sistema e que refletem características desse domínio.
 \end{alineascomponto}
 
-Após esse agrupamento, os requisitos funcionais foram representados em Casos de Uso \cite{jacobson92engenharia}. Um caso de uso identifica os agentes envolvidos em uma interação e especifica o tipo 
-de interação utilizando anotações sugeridas pela Unified Modeling Language (UML) 
-\citeonline{sommerville2003engenharia}. Em seguida, foi realizada a documentação dos requisitos (ver \autoref{ap:requisitos}).
+Após esse agrupamento, os requisitos funcionais foram representados em Casos de Uso \cite{jacobson92engenharia}. Um caso de uso identifica os agentes envolvidos em uma interação e especifica o tipo  de interação utilizando anotações sugeridas pela 
+\gls{uml} \citeonline{sommerville2003engenharia}. Em seguida, foi realizada a documentação dos requisitos (ver \autoref{ap:requisitos}).
 
 No final dessa etapa, ocorreu a Validação dos Requisitos junto ao cliente.  A Validação dos Requisitos é definida como o processo que certifica que o modelo de requisitos gerado  esteja  consistente  
 com  as  necessidades  e  intenções  de  clientes  e usuários \cite{rilston2003metodologia}. Esta etapa permitiu que os requisitos coletados e documentados estivesse de acordo com o que o 
@@ -165,7 +163,7 @@ para permitir a internacionalização do sistema.
 A seguir, apresentaremos a lista das ferramentas e das tecnologias utilizadas para o desenvolvimento do projeto:
 
 \begin{alineas}
-	\item \textbf{Astah}: para a modelagem baseada em UML (Unified Modeling Language) do sistema.
+	\item \textbf{Astah}: para a modelagem baseada em \acrshort{uml} do sistema.
 	\item \textbf{Python}: linguagem de programação para implementação do sistema.
     \item \textbf{Django}: framework web responsável pela camada de aplicação.
     \item \textbf{Rosetta}: aplicação desenvolvida em Django que facilitará a tradução do projeto para diversas línguas.  
@@ -190,11 +188,11 @@ deve refletir a estrutura e o comportamento descrito no projeto. Os componentes 
 
 O ambiente de desenvolvimento que est\'a sendo utilizado para desenvolver o sistema consiste em:
 \begin{alineas}
-	\item Sistema Operacional: Ubuntu 14.04 LTS;
-	\item Interpretador: Python 2.7.6;
-	\item Banco de Dados: PostgreSQL 9.3.13;
-	\item Framework de back-end: Django 1.7.11;
-	\item Framework de front-end: Metro UI CSS 3.0.15;
+	\item \textbf{Sistema Operacional}: Ubuntu 14.04 LTS;
+	\item \textbf{Interpretador}: Python 2.7.6;
+	\item \textbf{Banco de Dados}: PostgreSQL 9.3.13;
+	\item \textbf{\textit{Framework} de \textit{back-end}}: Django 1.7.11;
+	\item \textbf{\textit{Framework} de \textit{front-end}}: Metro UI CSS 3.0.15;
 \end{alineas}
 
 Para permitir uma maior independ\^encia desse ambiente com a maquina em que estamos desenvolvendo o sistema, decidimos criar um ambiente de desenvolvimento com o auxilio da 
@@ -215,25 +213,22 @@ essa ferramenta permite:
 No final dessa etapa, tivemos os código-fonte de todos os módulos do sistema, assim como o próprio sistema em funcionamento. 
 
 \section{Verificação e Validação}
-Essa etapa destina-se a mostrar que o sistema está de acordo com a especificação e que ele atende às expectativas de clientes e usuários,  
-al\'em de assegurar que o  programa está fazendo aquilo que foi definido na sua especificação e que não possui  erros  de  
-execução \cite{aguiar2012requisitos}. 
+Essa etapa destinou-se a mostrar que o sistema está de acordo com a especificação e que ele atende às expectativas de clientes e usuários, al\'em de assegurar que o  programa está fazendo aquilo que foi definido na sua especificação e que não possui  erros  de execução \cite{aguiar2012requisitos}. 
 
-Durante essa fase, foram realizados Testes de Unidade e Integra\c{c}\~ao em cada modulo do sistema, assim como Testes de Sistema no 
-sistema j\'a integrado.
+Durante essa fase, realizamos Testes de Unidade e Integra\c{c}\~ao em cada modulo do sistema, assim como Testes de Sistema no sistema j\'a integrado.
 
 \citeonline{aniche2014teste} define essas categorias de Testes de Software como:
 
 \begin{alineascomponto}
-	\item Teste de Unidade -- é aquele que testa uma única unidade do sistema. Ele a testa de maneira isolada, geralmente simulando as 
+	\item \textbf{Teste de Unidade} -- é aquele que testa uma única unidade do sistema. Ele a testa de maneira isolada, geralmente simulando as 
 prováveis dependências que aquela unidade tem. Em sistemas orientados a objetos, é comum que a unidade seja uma classe. Ou seja, quando 
 queremos escrever testes de unidade para a classe Pedido, essa bateria de testes testará o funcionamento da classe Pedido, 
 isolada, sem interações com outras classes.
-	\item  Teste de Integração -- é aquele que testa a integração entre duas partes do seu sistema. Os testes que você escreve para a sua 
+	\item \textbf{Teste de Integração} -- é aquele que testa a integração entre duas partes do seu sistema. Os testes que você escreve para a sua 
 classe PedidoDao, por exemplo, em que seu teste vai até o banco de dados, é um teste de integração. Afinal, você está testando a integração 
 do seu sistema com o sistema externo, que é o banco de dados. Testes que garantem que suas classes comunicam-se bem 
 com serviços web, escrevem arquivos texto, ou mesmo mandam mensagens via \textit{socket} são considerados testes de integração.
-	\item Teste de Sistema -- \'e aquele que garante que o sistema funciona como um todo. Este 
+	\item \textbf{Teste de Sistema} -- \'e aquele que garante que o sistema funciona como um todo. Este 
 nível de teste está interessado se o sistema funciona como um todo, com todas as 
 unidades trabalhando juntas. Ele é comumente chamado de teste de caixa preta, já 
 que durante o teste n\~ao se importa com a forma que os dados s\~ao processados, mas sim se as sa\'idas est\~ao de acordo com o que era esperado para entradas. 
@@ -241,9 +236,6 @@ que durante o teste n\~ao se importa com a forma que os dados s\~ao processados,
 
 \section{Definição dos Conteúdo para o Sistema}
 
-Após o sistema estar verificado e validado, ele terá que possuir conteúdos para ser utilizado por usu\'ario durante os testes com 
-usu\'arios. Decidimos optar por deixar os monitores\footnote{É o aluno de graduação concursado para exercer, 
-juntamente com o professor, atividades técnico-didáticas condizentes com o seu grau de conhecimento junto à determinada disciplina, já por 
-ele cursada.} das turmas desenvolverem os conteúdos que ser\~ao utilizados no sistema durante essa fase. 
+Após o sistema estar verificado e validado, ele teve que possuir conteúdos para ser utilizado por usu\'ario durante os testes com usu\'arios. Decidimos optar por deixar os monitores\footnote{É o aluno de graduação concursado para exercer, juntamente com o professor, atividades técnico-didáticas condizentes com o seu grau de conhecimento junto à determinada disciplina, já por ele cursada.} das turmas de matemática desenvolverem os conteúdos que foram utilizados no sistema durante a fase de avaliação. 
 
 Os monitores passaram por um treinamento, no qual aprenderam a utilizar o sistema para adicionarem os conteúdos.
