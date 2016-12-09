@@ -24,9 +24,9 @@ distribuição e manutenibilidade do sistema.
 \end{alineascomponto}
 
 \section{Considerações Gerais}
-As definições de arquitetura do processo de desenvolvimento do software esta 
-preocupado como o sistema deve ser organizado e com a estrutura geral do 
-sistema, estas definições tem que atender as especificações do projeto, desde as 
+As definições de arquitetura do processo de desenvolvimento do software estão 
+preocupadas como o sistema deve ser organizado e com a estrutura geral do 
+sistema. Estas definições tem que atender as especificações do projeto, desde as 
 especificações de segurança, regras de negócio, até a parte de persistência de 
 banco de dados. As decisões de projeto de arquitetura têm efeitos profundos 
 sobre a possibilidade de o sistema atender ou não aos requisitos críticos, como 
@@ -44,17 +44,17 @@ membro deve:
 	\item Analisar todas as mudanças arquiteturais significativas e 
 documentá-las;
     \item Ao verificar uma possível alteração na arquitetura, convocar uma 
-reunião com toda e equipe para discutir a possível alteração. 
+reunião com toda a equipe para discutir a possível alteração. 
 \end{alineascomponto}
 
 \section{Arquitetura}
 A arquitetura foi desenvolvida para ser de baixo acoplamento e que ao mesmo 
 tempo fosse independente de tecnologias existentes do mercado, sendo assim, 
-poderíamos por exemplo futuramente trocar o framework Django pelo o Spring, e o 
+poderíamos por exemplo futuramente trocar o framework Django pelo Spring, e o 
 mesmo seria transparente para os programadores e para o sistema.
 
 \subsection{Elementos que compõe a Arquitetura}
-A arquitetura é composta por elementos, em que em conjunto produzem o produto 
+A arquitetura é composta por elementos, que em conjunto produzem o produto 
 final. Esses elementos são: Database, Models, Views e Templates.
 
 Nos tópicos a seguir, descreveremos cada um dos componentes e o seu papel  dentro 
@@ -72,10 +72,10 @@ iguais a todos os tipos de acessos a bancos de dados.
 
 Com esse tipo de acesso aos dados, conseguiremos trocar facilmente de banco de 
 dados sem afetar a implementação do sistema. Por exemplo, caso estejamos 
-utilizando um SGBD relacional como o postgresql para armazenar os dados e 
+utilizando um \gls{sgbd} relacional como o postgresql para armazenar os dados e 
 necessitarmos migrar para um SGBD não “relacional”, os famosos banco de dados 
 NoSQL, como o MongoDB, não será necessário alterar nenhum aspecto da 
-implementação, pois as regras de negócio vão está totalmente separadas das 
+implementação, pois as regras de negócio estarão totalmente separadas das 
 funcionalidades de acesso ao banco de dados.
 
 \subsubsection{Models}
@@ -85,7 +85,7 @@ os modelos contemplarão também as associações entre as entidades, sendo que 
 entidade também terá al\'em de seus atributos, um conjunto de métodos para se 
 relacionar com o sistema.
 
-Os modelos implementarão um ORM(Object-Relational Mapping) para as views 
+Os modelos implementarão um \gls{orm} para as views 
 acessarem o banco de dados, tornando o sistema independente do acesso ao banco. 
 
 \subsubsection{Views}
@@ -100,7 +100,7 @@ neg\'ocio, elas são basicamente funções que aceitam como primeiro parâmetro 
 vinda do usuário pelo \textit{browser}, ela irá tratar essa requisição e 
 retornar uma resposta ao usuário.
 
-Dessa forma, cada caso de uso acaba tornando se uma view, sendo que views podem 
+Dessa forma, cada caso de uso acaba tornando-se uma view, sendo que views podem 
 dispor de outras views para realizarem suas tarefas. 
 
 \subsection{Desenho geral da arquitetura}
@@ -116,7 +116,7 @@ dispor de outras views para realizarem suas tarefas.
 \end{figure}
 
 
-Nessa arquitetura, o browser do cliente utilizar\'a de uma URL para realizar uma 
+Nessa arquitetura, o browser do cliente utilizar\'a de uma \gls{url} para realizar uma 
 requisição \`a uma view. Essa view poder\'a utilizar os models para extrair dados do 
 banco de dados e ela própria criar um template e retornar como uma forma 
 de resposta ao usuário, ou então, utilizar um template pronto e apenas 
@@ -135,7 +135,7 @@ se\c{c}\~oes a seguir, descreveremos cada um deles.
 Fornecer um substituto ou marcador da localização de outro objeto para controlar 
 o acesso a esse objeto, podemos controlar o acesso aos métodos de uma entidade 
 da seguinte forma: cria se uma classe EntidadeProxy que extende de Entidade, e 
-reimplementa cada um dos métodos, nessa nova implementação, você solicitar que o 
+reimplementa cada um dos métodos, nessa nova implementação, você deve solicitar que o 
 usuário informe uma autenticação que possua acesso, ao informar, esse método ira 
 apenas chamar o método da Entidade.   
 

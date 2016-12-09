@@ -5,15 +5,15 @@
 Este documento especifica os requisitos do sistema AskMath, fornecendo aos desenvolvedores as informações necessárias para o projeto e implementação, assim como para a realização dos testes. 
 
 \subsection{Visão geral do documento}
-Este documento apresenta os requisitos funcionais, n\~ao funcionais e de domínio.Para cada da requisito funcional, definimos seu caso de uso e sua descrição detalhada. Além disso, definimos sua 
+Este documento apresenta os requisitos funcionais, n\~ao funcionais e de domínio. Para cada requisito funcional, definimos seu caso de uso e sua descrição detalhada. Além disso, definimos sua 
 prioridade, explicado no tópico abaixo, e suas pré e pós condições, entradas e saídas caso existam, e por fim os diagramas de casos de uso do sistema e seus detalhamentos.
 
 \subsection{Prioridades dos requisitos}
-Cada requisito terá uma determinada prioridade, essa prioridade ira ajudar a equipe de desenvolvimento na escolha de quais requisitos mais se preocupar quando tiver desenvolvendo o sistema, criamos para isso, três níveis prioridades:
+Cada requisito terá uma determinada prioridade, essa prioridade ira ajudar a equipe de desenvolvimento na escolha de quais requisitos mais se preocupar quando tiver desenvolvendo o sistema, criamos para isso, três níveis de prioridade:
 
 \begin{alineascomponto}
 	\item \textbf{Essencial}: é o requisito ao qual o sistema não entra em funcionamento sem ele. Esses requisitos tem que ser implementados o mais rápido possível. 
-    \item \textbf{Importante}: requisito sem o qual o sistema entra em funcionamento, mas de forma não satisfatória. Esse requisitos deverão sem implementados, mas caso não sejam, o sistema ainda 
+    \item \textbf{Importante}: requisito sem o qual o sistema entra em funcionamento, mas de forma não satisfatória. Esses requisitos deverão ser implementados, mas caso não sejam, o sistema ainda 
 poderá funcionar consideravelmente.
 	\item \textbf{Desejável}: requisito que não compromete o sistema, esse tipo de requisito é comumente deixado para versões posteriores do sistema.
 \end{alineascomponto}
@@ -49,7 +49,7 @@ Prioridade: Essencial
   \begin{center}
   [RF003] Recuperar Senha
   \end{center}
-O Sistema deverá propiciar aos usuário uma opção para recuperar sua senha caso necessite.
+O Sistema deverá propiciar aos usuários uma opção para recuperar sua senha caso necessite.
 \linebreak
 Prioridade: Essencial
 }}
@@ -176,8 +176,8 @@ Um problema pode ser visível aos estudantes ou não. Quando o assistente estive
 adicionando um problema, terá um campo marcado por padrão como verdadeiro que 
 indicará se o problema estará visível ou não para os alunos. Caso o mesmo não 
 queira que o problema adicionado fique imediatamente visível aos alunos, ele 
-desmarcar\'a esse campo e futuramente ele poderá editar o problema e marcá-lo 
-quando quiser que os alunos possam acessá-la.
+desmarcar\'a esse campo e futuramente poderá editar o problema e marcá-lo 
+quando quiser que os alunos passem a acessá-lo.
 \linebreak
 Prioridade: Essencial
 }}
@@ -201,11 +201,8 @@ Prioridade: Essencial
   \begin{center}
 	[RF015] Recompensas e Punições
   \end{center}
-A cada 3 problemas que o aluno responder corretamente, ele será parabenizado e 
-ganhará um prêmio e a cada 3 errados ele será penalizado. Quando o aluno 
-resolver seguidamente três problemas corretamente, os seus pontos acumulados 
-irão dobrar e a cada vez que ele errar três questões seguidamente, seus pontos 
-acumulados serão subtraídos em 25%.
+A cada 3 problemas seguidos que o aluno responder corretamente, ele será parabenizado e 
+ganhará um prêmio. A cada erro, ele deverá ganhar uma pequena bonificação como incentivo a continuar praticando.
 \linebreak
 Prioridade: Essencial
 }}
@@ -426,10 +423,10 @@ terá de ver as estatísticas referentes ao andamento dele naquela lição como:
 Acertos, Erros, Saltos, Quantidade de Pontos Acumulados e também uma lista com 
 as lições sugeridas.
 	
-	\item Ordenar Problemas: Quando o bolsista adicionar um problema, ela será 
-adicionada automaticamente logo depois dos outros problemas daquela lição(se 
+	\item Ordenar Problemas: Quando o bolsista adicionar um problema, ele será 
+adicionado automaticamente logo após os outros problemas daquela mesma lição(se 
 pensarmos numa lista), mas ele deverá ter uma opção onde apenas arrastando 
-os problema de posição ele possa reordena-los, utilizando apenas o mouse.
+os problemas de posição seja possível reordena-los.
 
 \end{alineascomponto}
 
