@@ -16,7 +16,7 @@ diferentes por cada organização \cite{sommerville2003engenharia}.
 
 O processo de \textit{software} utilizado para desenvolver o sistema foi baseado no modelo cascata, também chamado de ciclo de vida clássico, proposto por Royce em 1970. Neste modelo, as fases são 
 sistematicamente seguidas de maneira sequencial \cite{pressman2006engenharia}. O modelo inicia com a fase de especificação de requisitos, passando pelo planejamento, modelagem, construção e 
-implantação, finalizando na manutenção progressiva do software, como apresentamos na \autoref{fig:ciclo-cascata}.
+implantação, finalizando na manutenção progressiva do \textit{software}, como apresentamos na \autoref{fig:ciclo-cascata}.
 
 As vantagens desse modelo se devem ao fato de que só se avança para a tarefa seguinte quando o cliente valida e aceita os produtos finais da tarefa atual, facilitando assim a compreensão adquirida ao 
 longo do projeto, além de facilitar o processo de criação da documentação para o sistema \cite{pressman2006engenharia}. Já as principais desvantagens, segundo \citeonline{pressman2006engenharia}, se 
@@ -26,7 +26,7 @@ cliente só recebe uma versão executável do sistema no final de todo o process
 
 Levando em consideração as vantagens e desvantagens antes citadas, esse modelo foi escolhido como base para o processo por facilitar o desenvolvimento de uma documentação mais detalhada e 
 principalmente pela equipe de desenvolvimento ser formada por uma única pessoa, o autor deste trabalho, impossibilitando a divisão de tarefas característica de metodologias 
-ágeis \footnote{Metodologias de desenvolvimento de software que tem enfoque nas pessoas e não em processos ou algoritmos, além de uma preocupação menor em documentação e maior em implementação 
+ágeis \footnote{Metodologias de desenvolvimento de \textit{software} que tem enfoque nas pessoas e não em processos ou algoritmos, além de uma preocupação menor em documentação e maior em implementação 
 \cite{michel2004metodologias}.}.
 
 \begin{figure}[H]
@@ -68,19 +68,19 @@ O processo desenvolvido est\'a dispon\'ivel em \url{www.askmath.quixada.ufc.br/s
 
 O Levantamento e An\'alise de Requisitos é a fase do desenvolvimento de um \textit{software} em que o analista verifica junto ao usuário 
 quais as necessidades, condições e princípios que o \textit{software} deverá atender \cite{matuda2013mapas}. Essa fase possibilitou 
-conhecer e estudar as necessidades do cliente, assim como as restrições que o software estará sujeito.
+conhecer e estudar as necessidades do cliente, assim como as restrições que o \textit{software} estará sujeito.
 
 Para realizar a coleta dos requisitos, optamos por utilizar entrevistas com o cliente, que no caso foi um dos professores de matemática da \gls{ufc}. Nessas entrevistas, que se caracterizaram como semi-estruturadas \footnote{Pois foram guiadas por um 
 roteiro previamente elaborado e composto por questões abertas \cite{belei2008uso}}, foi possível obter os requisitos do sistema, assim como 
 o público-alvo a quem o sistema atenderá. Essa técnica foi utilizada porque permitia uma organização flexível e ampliação dos 
 questionamentos à medida que as informações foram sendo fornecidas pelo cliente \cite{fujisawa2000utilizaccao}.
 
-A plataforma atender\'a quatro tipos de usu\'arios que formaram seu p\'ublico-alvo, ser\~ao administradores, professores, assistentes, e estudantes. Os administradores ser\~ao respons\'aveis por 
+A plataforma atender\'a quatro tipos de usu\'arios que formarão seu p\'ublico-alvo, ser\~ao administradores, professores, assistentes, e estudantes. Os administradores ser\~ao respons\'aveis por 
 cadastrar novos professores, assim como realizar a manuten\c{c}\~ao do sistema. Os professores ser\~ao responsáveis por definir 
 as disciplinas e li\c{c}\~oes que far\~ao parte do sistema. 
 Ap\'os as disciplinas e li\c{c}\~oes serem definidas pelos professores, os assistentes ser\~ao respons\'aveis por manter\footnote{Adicionar, editar e excluir os problemas.} os problemas de cada 
 li\c{c}\~ao. Os estudantes resolver\~ao os problemas desenvolvidos pelos assistentes e poder\~ao postar d\'uvidas sobre qualquer conte\'udo 
-no f\'orum de discuss\~oes. Quando a plataforma for aplicado em sala de aula, os professores ser\~ao ainda respons\'aveis por gerenciar suas 
+no f\'orum de discuss\~oes. Quando a plataforma for aplicada em sala de aula, os professores ser\~ao ainda respons\'aveis por gerenciar suas 
 turmas e acompanhar o andamento do progresso de cada um de seus estudantes. J\'a os assistentes, ser\~ao responsáveis por tirar d\'uvidas 
 dos estudantes no f\'orum de discuss\~oes.
 
@@ -134,19 +134,19 @@ cliente solicitou.
 
 \section{Projeto do Sistema}
 
-O Projeto de Software é à atividade de engenharia cujo foco é definir ``como'' os requisitos estabelecidos no projeto devem ser implementados no software \cite{pressman2006engenharia}. O objetivo da  
+O Projeto de \textit{Software} é a atividade de engenharia cujo foco é definir ``como'' os requisitos estabelecidos no projeto devem ser implementados no \textit{software} \cite{pressman2006engenharia}. O objetivo da  
 atividade de projetar é gerar um modelo ou representação que apresente solidez, comodidade e deleite \cite{pressman2006engenharia}. Nesta fase, definimos como será aplicado o conhecimento obtido na 
-pesquisa bibliográfica para se desenvolver o sistema. Para isto, definimos a arquitetura de software e as ferramentas que serão utilizadas durante o desenvolvimento do sistema. Nas seções a seguir, 
+pesquisa bibliográfica para se desenvolver o sistema. Para isto, definimos a arquitetura de \textit{software} e as ferramentas que serão utilizadas durante o desenvolvimento do sistema. Nas seções a seguir, 
 descrevemos um pouco sob cada um.
 
 \subsection{Arquitetura}
-Por arquitetura de software, entende-se a estrutura ou a organização de componentes de módulos, a maneira através da qual esses componentes interagem e a estrutura de dados que será usada pelos componentes \cite{pressman2006engenharia}.
+Por arquitetura de \textit{software}, entende-se a estrutura ou a organização de componentes de módulos, a maneira através da qual esses componentes interagem e a estrutura de dados que será usada pelos componentes \cite{pressman2006engenharia}.
 
 A arquitetura utilizada baseia-se na arquitetura Cliente-Servidor\cite{david2013everything}, em que o processamento é dividido em processos distintos. Um processo é responsável pela manutenção da 
 informação (servidor) e os outros são responsáveis pela captação de dados (clientes). Nessa arquitetura, os clientes enviam pedidos para o servidor, e este por sua vez processa estes dados e envia as 
 respostas dos pedidos aos clientes.
 
-Este modelo de arquitetura facilitará na manutenção do sistema, tendo em vista que toda atualização só necessitará ser realizada no servidor e automaticamente a mesma se propagará para todos os 
+Este modelo de arquitetura facilitará a manutenção do sistema, tendo em vista que toda atualização só necessitará ser realizada no servidor e automaticamente a mesma se propagará para todos os 
 clientes. Com todos os recursos centralizados no servidor, podemos também ter um maior ganho com segurança, já que podemos centralizar os nossos esforços para manter a segurança das informações em 
 apenas um único ponto, além de possibilitar que apenas cliente credenciados possam acessar e/ou alterar essas informações. Uma das outras grandes vantagens que temos  ao utilizar esse modelo, é que, 
 \`a medida que a quantidade de clientes aumentar, será possível suprir esses clientes sem necessitar realizar nenhuma modificação essencial.
@@ -156,7 +156,7 @@ Para uma visualização mais detalhada da arquitetura de \textit{software} defin
 \subsection{Ferramentas}
 
 A análise do sistema foi feita com o auxílio da ferramenta de criação de diagramas Astah \cite{astah2016}. A implementação com a linguagem 
-Python \cite{vanrossum2010python}, o sistema de gerenciamento de banco de dados PostgresSQl \cite{momjian2001postgresql} e a camada de 
+Python \cite{vanrossum2010python}, o sistema de gerenciamento de banco de dados PostgreSQL \cite{momjian2001postgresql} e a camada de 
 aplicação utilizar\'a o framework Django \cite{django2016}. O módulo Rosseta \cite{rosetta2016} ser\'a empregado 
 para permitir a internacionalização do sistema.
  
@@ -168,7 +168,7 @@ A seguir, apresentaremos a lista das ferramentas e das tecnologias utilizadas pa
     \item \textbf{Django}: framework web responsável pela camada de aplicação.
     \item \textbf{Rosetta}: aplicação desenvolvida em Django que facilitará a tradução do projeto para diversas línguas.  
     \item \textbf{PostgreSQL}: como banco de dados para armazenamento e consulta de informações.
-    \item \textbf{Metro UI CSS}: framework que faz uso de HTML, Cascading Stype Sheet (CSS) e Javascript para criação do front-end do sistema.
+    \item \textbf{Metro UI CSS}: framework que faz uso de HTML, \gls{css} e Javascript para criação do \textit{front-end} do sistema.
     \item \textbf{MathJax}: \'e uma engine\footnote{Uma biblioteca ou pacote de funcionalidades que são utilizadas para facilitar o desenvolvimento de alguma tecnologia.} de código aberto 
 desenvolvido em 
 javascript na forma de um plugin para incluir equações matemáticas em todos os navegadores, esse plugin aceita expressões em  MathML e Latex.
@@ -195,10 +195,10 @@ O ambiente de desenvolvimento que est\'a sendo utilizado para desenvolver o sist
 	\item \textbf{\textit{Framework} de \textit{front-end}}: Metro UI CSS 3.0.15;
 \end{alineas}
 
-Para permitir uma maior independ\^encia desse ambiente com a maquina em que estamos desenvolvendo o sistema, decidimos criar um ambiente de desenvolvimento com o auxilio da 
+Para permitir uma maior independ\^encia desse ambiente com a máquina em que estamos desenvolvendo o sistema, decidimos criar um ambiente de desenvolvimento com o auxílio da 
 ferramenta Virtualenv 15.0.2. O Virtualenv permite isolar o ambiente de desenvolvimento de um determinado projeto para garantir que um pacote instalado não interfira nos demais projetos que 
-rodam na maquina, al\'em de possibilitar saber facilmente a vers\~ao de todos os pacotes e componentes que est\~ao sendo utilizados para desenvolver o sistema. Essa informa\c{c}\~ao \'e 
-importante quando formos replicar o ambiente de desenvolvimento no servidor de produ\c{c}\~ao\footnote{O ambiente de produção é onde os usuários finais acessarão o software}. 
+rodam na máquina, al\'em de possibilitar saber facilmente a vers\~ao de todos os pacotes e componentes que est\~ao sendo utilizados para desenvolver o sistema. Essa informa\c{c}\~ao \'e 
+importante quando formos replicar o ambiente de desenvolvimento no servidor de produ\c{c}\~ao\footnote{O ambiente de produção é onde os usuários finais acessarão o \textit{software}.}. 
 
 Todos os c\'odigos-fonte gerados nessa etapa, passaram por um processo de versionamento\footnote{O versionamento de uma aplicação tem como 
 foco principal documentar as inclusões, alterações ou até mesmo exclusões de funcionalidades.} atrav\'es da ferramenta Git 1.9.1, 
@@ -217,7 +217,7 @@ Essa etapa destinou-se a mostrar que o sistema está de acordo com a especifica�
 
 Durante essa fase, realizamos Testes de Unidade e Integra\c{c}\~ao em cada modulo do sistema, assim como Testes de Sistema no sistema j\'a integrado.
 
-\citeonline{aniche2014teste} define essas categorias de Testes de Software como:
+\citeonline{aniche2014teste} define essas categorias de Testes de \textit{Software} como:
 
 \begin{alineascomponto}
 	\item \textbf{Teste de Unidade} -- é aquele que testa uma única unidade do sistema. Ele a testa de maneira isolada, geralmente simulando as 
