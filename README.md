@@ -2,7 +2,7 @@
 Titulo: UM AMBIENTE VIRTUAL DE APRENDIZAGEM PARA AUXILIAR NO PROCESSO DE ENSINO E APRENDIZAGEM DE MATEMATICA 
 
 <a href="https://doi.org/10.29327/bs/2016.85941" target="_blank">
-  <img src ="https://app.publications.even3.com.br/badge/doi?c=10.29327/bs/2016.85941">
+  DOI 10.29327/bs/2016.85941
 </a>
 
 **RESUMO**
